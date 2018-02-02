@@ -1,0 +1,16 @@
+PODS:
+  - HTMIBaseComponent (1.0.1)
+
+DEPENDENCIES:
+  - HTMIBaseComponent (from `../`)
+
+EXTERNAL SOURCES:
+  HTMIBaseComponent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HTMIBaseComponent: 2df62020f5506777d3f238a739068520f1ffd5db
+
+PODFILE CHECKSUM: df8f1e4067e9b4597e8f76ee24626ab73215ea96
+
+COCOAPODS: 1.2.1.beta.1

@@ -1,0 +1,10 @@
+use_frameworks!
+
+target 'HTMIBaseComponent_Example' do
+  pod 'HTMIBaseComponent', :path => '../'
+
+  target 'HTMIBaseComponent_Tests' do
+    inherit! :search_paths
+
+  end
+end

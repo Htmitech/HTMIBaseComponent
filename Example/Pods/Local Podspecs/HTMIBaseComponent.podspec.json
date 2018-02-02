@@ -1,0 +1,22 @@
+{
+  "name": "HTMIBaseComponent",
+  "version": "1.0.1",
+  "summary": "A short description of HTMIBaseComponent.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lqwang521/HTMIBaseComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lqwang521": "wanglq@htmitech.com"
+  },
+  "source": {
+    "git": "https://github.com/lqwang521/HTMIBaseComponent.git",
+    "tag": "1.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HTMIBaseComponent/Classes/**/*"
+}
