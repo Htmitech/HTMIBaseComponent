@@ -26,7 +26,6 @@
                                                         options:NSJSONReadingMutableContainers
                                                           error:&err];
     if(err) {
-        
         return nil;
     }
     return dic;

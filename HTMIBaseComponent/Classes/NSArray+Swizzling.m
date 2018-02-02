@@ -48,6 +48,7 @@
             return [self swizzling_objectAtIndex:index];
         }
         @catch (NSException *exception) {
+            // 打印崩溃信息
             return nil;
         }
         @finally {}
