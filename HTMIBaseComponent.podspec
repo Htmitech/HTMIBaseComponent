@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HTMIBaseComponent'
   s.version          = '1.0.0'
-  s.summary          = 'base component'
+  s.summary          = 'base category component'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lqwang521/HTMIBaseComponent'
+  s.homepage         = 'https://github.com/Htmitech/HTMIBaseComponent'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lqwang521' => 'wanglq@htmitech.com' }
-  s.source           = { :git => 'https://github.com/lqwang521/HTMIBaseComponent.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Htmitech/HTMIBaseComponent.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
