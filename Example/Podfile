@@ -4,8 +4,6 @@ target 'HTMIBaseComponent_Example' do
   pod 'HTMIBaseComponent', :path => '../'
   
   pod 'SVProgressHUD', '~> 2.1.2'
-  pod 'TYAlertController', '~> 1.1.8'#自定义弹出框
-  pod 'Masonry', '~> 1.0.2'
 
   target 'HTMIBaseComponent_Tests' do
     inherit! :search_paths

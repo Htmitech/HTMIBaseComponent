@@ -23,7 +23,6 @@
 #import "NSString+Hash.h"
 #import "NSString+HTMITime.h"
 #import "SVProgressHUD+Swizzling.h"
-#import "TYAlertController+BlurEffects.h"
 #import "UIApplication+JKApplicationSize.h"
 #import "UIApplication+JKKeyboardFrame.h"
 #import "UIApplication+JKNetworkActivityIndicator.h"

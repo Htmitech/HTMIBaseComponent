@@ -1,28 +1,20 @@
 PODS:
-  - HTMIBaseComponent (1.0.1):
-    - Masonry (~> 1.0.2)
+  - HTMIBaseComponent (1.1.1):
     - SVProgressHUD (~> 2.1.2)
-    - TYAlertController (~> 1.1.8)
-  - Masonry (1.0.2)
   - SVProgressHUD (2.1.2)
-  - TYAlertController (1.1.8)
 
 DEPENDENCIES:
   - HTMIBaseComponent (from `../`)
-  - Masonry (~> 1.0.2)
   - SVProgressHUD (~> 2.1.2)
-  - TYAlertController (~> 1.1.8)
 
 EXTERNAL SOURCES:
   HTMIBaseComponent:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HTMIBaseComponent: d7591780c0dc2f7c2e7442b5cb134543bf8066e2
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  HTMIBaseComponent: f2106a74265480a4b5b125bdb7d017a7c222d1ee
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
-  TYAlertController: 502d3dbc5d007e68559400b509c736f60ebc2cc1
 
-PODFILE CHECKSUM: 60fdc65378613665d22338e98b49c92cd52d2e75
+PODFILE CHECKSUM: e09993ce1dcdeb02a0d9323b6c74e2735f78adf4
 
 COCOAPODS: 1.2.1.beta.1

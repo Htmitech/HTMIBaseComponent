@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTMIBaseComponent'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'base category component'
 
 # This description is used to generate tags and improve search results.
@@ -40,7 +40,5 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'SVProgressHUD'    , '~> 2.1.2'
-  # s.dependency 'TYAlertController', '~> 1.2.0'
-  # s.dependency 'Masonry'          , '~> 1.1.0'
 
 end
