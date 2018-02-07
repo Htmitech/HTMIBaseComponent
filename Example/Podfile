@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'HTMIBaseComponent_Example' do
   pod 'HTMIBaseComponent', :path => '../'
+  
+  pod 'SVProgressHUD', '~> 2.1.2'
 
   target 'HTMIBaseComponent_Tests' do
     inherit! :search_paths

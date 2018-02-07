@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '313CF907CD4BB7A04E676EE70F8FC9EF'
-               BlueprintName = 'HTMIBaseComponent'
+               BlueprintIdentifier = '8D593AB57128BDD00BC639E22D89E028'
+               BlueprintName = 'SVProgressHUD'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'HTMIBaseComponent.framework'>
+               BuildableName = 'SVProgressHUD.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
