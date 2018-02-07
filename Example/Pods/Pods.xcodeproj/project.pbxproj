@@ -12,7 +12,6 @@
 		02300719EBCA55B2836EC52CB20FCC64 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D360A48FC74FADF08177DBD225B5B9 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		028CE6178A3FB9AFC2684ED882155C98 /* UIView+UIScreenDisplaying.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0367AC3F347BF91FBAD09061D3E36E /* UIView+UIScreenDisplaying.m */; };
 		06297B77A11112954BA7177693BD4E60 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AD220E19F8FA685C7FF361CF91DA55F2 /* MASViewConstraint.m */; };
-		08B476511AEACD55E8DD1C95C4346A0C /* TYAlertController+BlurEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C07A2B73F118DECCBB96773F42833BC /* TYAlertController+BlurEffects.m */; };
 		0975CE55960540655CC0AA4F48EF08FC /* TYAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = D2A053AEE9D08111243A88802406BAAF /* TYAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0977252A3304A7B87D6233DA4D98A488 /* NSDictionary+LocaleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E141F77D144183189D918BADD0F004B /* NSDictionary+LocaleLog.m */; };
 		0BAC91E59B8E22A7BDD42BFEBAFAE83E /* NSData+FormData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CDC1777CCA579221B64293DD830CB /* NSData+FormData.m */; };
@@ -24,7 +23,6 @@
 		176F1767731D3E355DAE7B6E420AC806 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CFC2F27D577392D85B522984A1E34C /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		19605257471F97C5FADF39373DB6EC47 /* UIResponder+JKFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 298C3BCE90F7A76F766F8BDE8960D314 /* UIResponder+JKFirstResponder.m */; };
 		1A66E96C476BC92967954CB6470F9387 /* UIButton+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = B4057E8152C391E80471D59E5F38CC20 /* UIButton+touch.m */; };
-		1B1BD31E202AE2C9008135CB /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1BD31C202AE2C9008135CB /* UIButton+Badge.m */; };
 		1B735D02C90853DA4CEC0B2DED16AEB6 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 708BC79576E9CF44DBDF8E1D99DB685B /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E073F7AD08BA9457E12ADC8D5988E49 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6459FA4985F67DA9B238B112D6CDDEC3 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F13686F307CAD5901A0F837115BF291 /* NSObject+HTMIObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A5B2AFF155457B6B65B58A3A0C09049 /* NSObject+HTMIObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,7 +70,6 @@
 		4A1E803E7F2F73343375432500FB2C40 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1459EEA53A0787B683F42E8C356A5967 /* SVProgressHUD.framework */; };
 		4B42441EDE444DD5349830DAF9DA665A /* UIView+JKCustomBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2016E90857785D10F2D7AAAF6B71FB /* UIView+JKCustomBorder.m */; };
 		4CA0C705984CC7D4AE46FFBF544D3468 /* UIView+JKRecursion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94F5AF4A156D3D772E2BBD6AC1A08A /* UIView+JKRecursion.m */; };
-		4F1EDF8AA55FFC0FC9BD6C7CA31D9CE3 /* TYAlertController+BlurEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = BD98884F924DA19B65A1A5802986AD65 /* TYAlertController+BlurEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FC6198E750B052ED6BDF36E808FAD03 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E69CF0038622B3892D30B3214000BD /* SVRadialGradientLayer.m */; };
 		4FE462CA0A863B95637D9483B9C4819B /* NSData+FormData.h in Headers */ = {isa = PBXBuildFile; fileRef = BEAA103C292D1D240BEC3FC82CBDDE1A /* NSData+FormData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		506061CEB3533B1C6163599C55966EFA /* TYShowAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B121DE68CB37B382EE01ABBA978AA13 /* TYShowAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -268,8 +265,6 @@
 		15D7F475169CCBDA182397D628D78726 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19686666847EC0CB736E49F26B48CA31 /* HTMIBaseComponent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTMIBaseComponent.xcconfig; sourceTree = "<group>"; };
 		1A5B2AFF155457B6B65B58A3A0C09049 /* NSObject+HTMIObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+HTMIObject.h"; sourceTree = "<group>"; };
-		1B1BD31C202AE2C9008135CB /* UIButton+Badge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
-		1B1BD31D202AE2C9008135CB /* UIButton+Badge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
 		1CB6A523C2F9BD344D8E3CDB92EADFFC /* UIView+JKRecursion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+JKRecursion.h"; sourceTree = "<group>"; };
 		1D6CDC1777CCA579221B64293DD830CB /* NSData+FormData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+FormData.m"; sourceTree = "<group>"; };
 		1FAB8A0C4B8A008E72D66FD428A6DDB3 /* UIView+JKAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+JKAnimation.h"; sourceTree = "<group>"; };
@@ -291,7 +286,6 @@
 		34FF1B8D778F42FD93CC6B3CD1FEC04B /* UILabel+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Utility.m"; sourceTree = "<group>"; };
 		393CEE9AA6E41907CE9A785DA9B525A5 /* UIImage+RenderedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+RenderedImage.h"; sourceTree = "<group>"; };
 		3A5620160DE453C84576CD4FE06FE62B /* UIColor+Hex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
-		3C07A2B73F118DECCBB96773F42833BC /* TYAlertController+BlurEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYAlertController+BlurEffects.m"; sourceTree = "<group>"; };
 		3C8751DD10287EEC43D87424AFEE5F94 /* UIBarButtonItem+Extention.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extention.m"; sourceTree = "<group>"; };
 		3CFB8EB3F5D20E605CBC567CCACF26C2 /* Pods-HTMIBaseComponent_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HTMIBaseComponent_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3D88464EC668686605DD9A1F9A40FDFB /* UITableViewCell+GetCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+GetCell.h"; sourceTree = "<group>"; };
@@ -403,7 +397,6 @@
 		BA0AF24ED45F1B52A56007499766629F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB42044FB16E44372348A37A7F9C4E10 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9975B206F2A8877C6E605F34902400 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BD98884F924DA19B65A1A5802986AD65 /* TYAlertController+BlurEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYAlertController+BlurEffects.h"; sourceTree = "<group>"; };
 		BDFA096622747B160B1A279ACB3AEBCB /* Pods-HTMIBaseComponent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HTMIBaseComponent_Tests-dummy.m"; sourceTree = "<group>"; };
 		BEAA103C292D1D240BEC3FC82CBDDE1A /* NSData+FormData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+FormData.h"; sourceTree = "<group>"; };
 		C360A8D6495CC68D5290A4942F2E3512 /* UIView+JKFind.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKFind.m"; sourceTree = "<group>"; };
@@ -569,8 +562,6 @@
 			isa = PBXGroup;
 			children = (
 				AA3AE650B8AE129444346A2895ECEB38 /* Foundation+Log.m */,
-				1B1BD31D202AE2C9008135CB /* UIButton+Badge.h */,
-				1B1BD31C202AE2C9008135CB /* UIButton+Badge.m */,
 				0058588CB5D803C31478BBFF734FD515 /* NSArray+HTMIExtension.h */,
 				CC347A270D6F5D16B833F58FC82753C7 /* NSArray+HTMIExtension.m */,
 				2D9236D227013A53AE6B3CB0BE556FB6 /* NSArray+LocaleLog.h */,
@@ -598,8 +589,6 @@
 				0C2E362DFFD1AD019DF0D7F3393A03DD /* NullSafe.m */,
 				4183E745F7111B1F2041658FBC543065 /* SVProgressHUD+Swizzling.h */,
 				909697EBA7009871152FCC08A38F4B96 /* SVProgressHUD+Swizzling.m */,
-				BD98884F924DA19B65A1A5802986AD65 /* TYAlertController+BlurEffects.h */,
-				3C07A2B73F118DECCBB96773F42833BC /* TYAlertController+BlurEffects.m */,
 				C739E67F49AB7EC07492A0BD6F8A4883 /* UIApplication+JKApplicationSize.h */,
 				4EA68A038D7E865729A2F356DAF23840 /* UIApplication+JKApplicationSize.m */,
 				66461F98ECD06DDFB5B5B96485C7A7A2 /* UIApplication+JKKeyboardFrame.h */,
@@ -920,7 +909,6 @@
 				D23E0D3F3E7C72EAD4BA855EC476035C /* NSString+Hash.h in Headers */,
 				614F15BD5FC4EFDFE2B2B8629C9B246B /* NSString+HTMITime.h in Headers */,
 				82E060F14547F7710D7CA9BE49581451 /* SVProgressHUD+Swizzling.h in Headers */,
-				4F1EDF8AA55FFC0FC9BD6C7CA31D9CE3 /* TYAlertController+BlurEffects.h in Headers */,
 				E32489CDB1FCE04E956AE67A2746D283 /* UIApplication+JKApplicationSize.h in Headers */,
 				70778C9A18B2D77D4074E5BEBEAD9C52 /* UIApplication+JKKeyboardFrame.h in Headers */,
 				D67A723DE14A419E4585CE7043C06DF5 /* UIApplication+JKNetworkActivityIndicator.h in Headers */,
@@ -1209,12 +1197,10 @@
 				E165F5D13F057BB89CFB5AD361249907 /* NSObject+JudgeNull.m in Sources */,
 				B9BF50018DFFC1AE8BF1CC68A6CCB74E /* NSString+Base64.m in Sources */,
 				70329AEDAD5A97514717DC58DEA72905 /* NSString+BundlePath.m in Sources */,
-				1B1BD31E202AE2C9008135CB /* UIButton+Badge.m in Sources */,
 				6B03D46FB966BFF93A892781517FC5CD /* NSString+Hash.m in Sources */,
 				44D50F3C7A3F167D01BB1A88CF090E58 /* NSString+HTMITime.m in Sources */,
 				7CDF78DCEB4CBED565BF992E9F613376 /* NullSafe.m in Sources */,
 				F4891892DCCD461853C8652CF4CEF2FA /* SVProgressHUD+Swizzling.m in Sources */,
-				08B476511AEACD55E8DD1C95C4346A0C /* TYAlertController+BlurEffects.m in Sources */,
 				6E7F1AF22716C342DA14BA811A7D5FE6 /* UIApplication+JKApplicationSize.m in Sources */,
 				A1D7E1D1A5326763B5ECE037F325B66F /* UIApplication+JKKeyboardFrame.m in Sources */,
 				56C621F5A549339E05C8DF4D3A34E1F0 /* UIApplication+JKNetworkActivityIndicator.m in Sources */,
