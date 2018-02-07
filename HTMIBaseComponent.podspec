@@ -41,6 +41,6 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'SVProgressHUD'    , '~> 2.1.2'
   # s.dependency 'TYAlertController', '~> 1.2.0'
-  s.dependency 'Masonry'          , '~> 1.1.0'
+  # s.dependency 'Masonry'          , '~> 1.1.0'
 
 end
