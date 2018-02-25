@@ -8,6 +8,10 @@
 
 #import "HTMIViewController.h"
 
+#import "NSString+Hash.h"
+
+#import "UIFont+HTMIFont.h"
+
 @interface HTMIViewController ()
 
 @end

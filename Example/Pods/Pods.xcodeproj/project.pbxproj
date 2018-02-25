@@ -28,6 +28,13 @@
 		1B9DD134202D8B0400B130A1 /* NSString+HTMISize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DD11F202D8AFF00B130A1 /* NSString+HTMISize.m */; };
 		1B9DD137202D8B0400B130A1 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DD124202D8B0000B130A1 /* UIScrollView+EmptyDataSet.m */; };
 		1B9DD13C202D8B0400B130A1 /* UINavigationBar+myNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9DD12E202D8B0300B130A1 /* UINavigationBar+myNavigationBar.m */; };
+		1BB921CB204253E4007510E6 /* UIFont+HTMIFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9DD10B202D587500B130A1 /* UIFont+HTMIFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB921CC20425402007510E6 /* NSString+HTMISize.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9DD12C202D8B0200B130A1 /* NSString+HTMISize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB921CD20425407007510E6 /* UINavigationBar+myNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9DD126202D8B0100B130A1 /* UINavigationBar+myNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB921CE2042540C007510E6 /* UIScrollView+EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9DD118202D8AFE00B130A1 /* UIScrollView+EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB921CF2042545A007510E6 /* HTMIUserdefaultHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9DD10D202D589000B130A1 /* HTMIUserdefaultHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB921D020425460007510E6 /* HTMISettingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9DD110202D58D000B130A1 /* HTMISettingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB921D120425463007510E6 /* UIView+JKToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9DD127202D8B0100B130A1 /* UIView+JKToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D084DB1445391782269D093CB5AA0FF /* UIView+JKDraggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 443F834C4C6AD920CB035D74BEFEE2A0 /* UIView+JKDraggable.m */; };
 		1D28E52CAF97658CAEE4599CA3C4EBFA /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B9DE3366B1C5305DC7E5784E16F95 /* SVProgressHUD.bundle */; };
 		1F4D9A498FE1642A6776F7EF2466E7C0 /* UIApplication+JKKeyboardFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 239F61D98D0AC8CA4363354744711F1F /* UIApplication+JKKeyboardFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -706,6 +713,7 @@
 				836603F9869D569951E882CE796B1AFB /* NSArray+HTMIExtension.h in Headers */,
 				AC954DFE683156B8967FBFF9B6797873 /* NSArray+LocaleLog.h in Headers */,
 				74ECC0F2A3A5EA2CBF579F94128E1141 /* NSArray+Swizzling.h in Headers */,
+				1BB921CE2042540C007510E6 /* UIScrollView+EmptyDataSet.h in Headers */,
 				F11E7E774F11EB732C7DF0F049EA5302 /* NSData+FormData.h in Headers */,
 				B219E8EB360368C0DF56961A44EC8159 /* NSDictionary+HTMIExtension.h in Headers */,
 				71D275B29EC7EC388365AF8D12246106 /* NSDictionary+LocaleLog.h in Headers */,
@@ -718,6 +726,7 @@
 				A12D37A3B161BD7B67B39426F9C36328 /* SVProgressHUD+Swizzling.h in Headers */,
 				FB69563FE3E4C1D307C042A5892328A1 /* UIApplication+JKApplicationSize.h in Headers */,
 				1F4D9A498FE1642A6776F7EF2466E7C0 /* UIApplication+JKKeyboardFrame.h in Headers */,
+				1BB921D020425460007510E6 /* HTMISettingManager.h in Headers */,
 				1A72B5BECE2F7BE370B0DD1F7E23B3DC /* UIApplication+JKNetworkActivityIndicator.h in Headers */,
 				A9822B64990A79CF3DBAA7E9689288F3 /* UIBarButtonItem+Extention.h in Headers */,
 				633CB18C1C394FF5871436D2148A5E59 /* UIButton+Delay.h in Headers */,
@@ -726,6 +735,7 @@
 				F31CC685F1D53720C6D85596E7722CBB /* UIColor+Hex.h in Headers */,
 				938544E31A207788D1C7C8B794E2FDE4 /* UIImage+FileImage.h in Headers */,
 				C8A8EBF60D2D681391A94B55CC0173F3 /* UIImage+ImageEffects.h in Headers */,
+				1BB921CB204253E4007510E6 /* UIFont+HTMIFont.h in Headers */,
 				A1749E4ED1035E940637E05F97D5A2A4 /* UIImage+RenderedImage.h in Headers */,
 				30D424853E22C690E6EDE22AF6E05CB4 /* UIImage+WaterMark.h in Headers */,
 				E54DD83EF74C877FE7821D564638F15B /* UIImageView+RotateImgV.h in Headers */,
@@ -734,14 +744,18 @@
 				01398C13E442B2F3C1E3C8FB5BFF29D5 /* UIResponder+JKFirstResponder.h in Headers */,
 				304E195B1D52EED67BC66EBF93326547 /* UIScreen+JKFrame.h in Headers */,
 				6BA994CFE38C2EF05288E7D085994463 /* UIScrollView+NoLeftPanGesture.h in Headers */,
+				1BB921CC20425402007510E6 /* NSString+HTMISize.h in Headers */,
+				1BB921CF2042545A007510E6 /* HTMIUserdefaultHelper.h in Headers */,
 				B8E250F36BC7C2FEC42BF7EA5C06897A /* UISearchBar+HTMISearchBar.h in Headers */,
 				FE56A163B4367F20B409759E4F6ACB50 /* UITableViewCell+GetCell.h in Headers */,
 				3A5D1F3E834E413EBF2AD40ED146E4F1 /* UIView+Extension.h in Headers */,
+				1BB921D120425463007510E6 /* UIView+JKToast.h in Headers */,
 				49A2A132B7B1A51DEC3D92142499ADC2 /* UIView+JKAnimation.h in Headers */,
 				4481761E9CABD19E3636619EA753459E /* UIView+JKBlockGesture.h in Headers */,
 				61183A21A43A4F9A2045BA018AE7FE8C /* UIView+JKConstraints.h in Headers */,
 				BCB6DE5B9F4B4A71237BA54D9EE65491 /* UIView+JKCustomBorder.h in Headers */,
 				58127813BBE09F9495BE7BC9F8B158B0 /* UIView+JKDraggable.h in Headers */,
+				1BB921CD20425407007510E6 /* UINavigationBar+myNavigationBar.h in Headers */,
 				E5E364BA4D8F4A0399B2F445D374814F /* UIView+JKFind.h in Headers */,
 				03DDAB1E0DAB3CA99670CC4A5F2E8341 /* UIView+JKFrame.h in Headers */,
 				13285344F0A57ED918071EDAF21716B3 /* UIView+JKNib.h in Headers */,
