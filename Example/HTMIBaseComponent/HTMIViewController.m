@@ -7,10 +7,11 @@
 //
 
 #import "HTMIViewController.h"
-
 #import "NSString+Hash.h"
-
 #import "UIFont+HTMIFont.h"
+#import "NSDictionary+LocaleLog.h"
+#import "NSArray+LocaleLog.h"
+
 
 @interface HTMIViewController ()
 
@@ -21,13 +22,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSDictionary *test =  [NSDictionary dictionaryWithObjectsAndKeys:@"test1",@"key1",@"test2",@"key1", nil];
+    [test descriptionWithLocale:nil];
+    NSLog(@"%@",test);
+    
+    NSArray *array =  [NSArray arrayWithObjects:@"test1",@"key1",@"test2",@"key1", nil];
+    [array descriptionWithLocale:nil];
+    NSLog(@"%@",array);
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    
 }
 
 @end

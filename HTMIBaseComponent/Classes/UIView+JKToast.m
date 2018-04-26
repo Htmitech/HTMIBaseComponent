@@ -7,9 +7,10 @@
 
 
 #import "UIView+JKToast.h"
+#import "UIFont+HTMIFont.h"
 #import <QuartzCore/QuartzCore.h>
 #import <objc/runtime.h>
-#import "UIFont+HTMIFont.h"
+
 /*
  *  CONFIGURE THESE VALUES TO ADJUST LOOK & FEEL,
  *  DISPLAY DURATION, ETC.
@@ -110,7 +111,7 @@ NSString * const JKToastPositionBottom          = @"bottom";
 
 
 - (void)jk_showToast:(UIView *)toast duration:(NSTimeInterval)duration position:(id)position
-      tapCallback:(void(^)(void))tapCallback
+         tapCallback:(void(^)(void))tapCallback
 {
     toast.center = [self jk_centerPointForPosition:position withToast:toast];
     toast.alpha = 0.0;
@@ -249,7 +250,7 @@ NSString * const JKToastPositionBottom          = @"bottom";
         CGRect boundingRect = [string boundingRectWithSize:constrainedSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil];
         return CGSizeMake(ceilf(boundingRect.size.width), ceilf(boundingRect.size.height));
     }
-
+    
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
     return [string sizeWithFont:font constrainedToSize:constrainedSize lineBreakMode:lineBreakMode];
@@ -259,7 +260,7 @@ NSString * const JKToastPositionBottom          = @"bottom";
 - (UIView *)jk_viewForMessage:(NSString *)message title:(NSString *)title image:(UIImage *)image {
     // sanity
     if((message == nil) && (title == nil) && (image == nil)) return nil;
-
+    
     // dynamically build a toast view with any combination of message, title, & image.
     UILabel *messageLabel = nil;
     UILabel *titleLabel = nil;
@@ -276,7 +277,7 @@ NSString * const JKToastPositionBottom          = @"bottom";
         wrapperView.layer.shadowRadius = JKToastShadowRadius;
         wrapperView.layer.shadowOffset = JKToastShadowOffset;
     }
-
+    
     wrapperView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:JKToastOpacity];
     
     if(image != nil) {
@@ -343,7 +344,7 @@ NSString * const JKToastPositionBottom          = @"bottom";
     
     // messageLabel frame values
     CGFloat messageWidth, messageHeight, messageLeft, messageTop;
-
+    
     if(messageLabel != nil) {
         messageWidth = messageLabel.bounds.size.width;
         messageHeight = messageLabel.bounds.size.height;
@@ -352,14 +353,14 @@ NSString * const JKToastPositionBottom          = @"bottom";
     } else {
         messageWidth = messageHeight = messageLeft = messageTop = 0.0;
     }
-
+    
     CGFloat longerWidth = MAX(titleWidth, messageWidth);
     CGFloat longerLeft = MAX(titleLeft, messageLeft);
     
     // wrapper width uses the longerWidth or the image width, whatever is larger. same logic applies to the wrapper height
-    CGFloat wrapperWidth = MAX((imageWidth + (JKToastHorizontalPadding * 2)), (longerLeft + longerWidth + JKToastHorizontalPadding));    
+    CGFloat wrapperWidth = MAX((imageWidth + (JKToastHorizontalPadding * 2)), (longerLeft + longerWidth + JKToastHorizontalPadding));
     CGFloat wrapperHeight = MAX((messageTop + messageHeight + JKToastVerticalPadding), (imageHeight + (JKToastVerticalPadding * 2)));
-                         
+    
     wrapperView.frame = CGRectMake(0.0, 0.0, wrapperWidth, wrapperHeight);
     
     if(titleLabel != nil) {
@@ -375,7 +376,7 @@ NSString * const JKToastPositionBottom          = @"bottom";
     if(imageView != nil) {
         [wrapperView addSubview:imageView];
     }
-        
+    
     return wrapperView;
 }
 

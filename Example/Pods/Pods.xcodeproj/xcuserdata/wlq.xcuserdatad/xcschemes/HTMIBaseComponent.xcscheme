@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8ABA3A9E5D76DA573C17855067B2C2A8'
-               BlueprintName = 'HTMIBaseComponent'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'HTMIBaseComponent.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "890306BC6217A0757873CF36E087A3AE"
+               BlueprintName = "HTMIBaseComponent"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "HTMIBaseComponent.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

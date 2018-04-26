@@ -57,7 +57,7 @@ void bd_exchageClassMethod_systemFontOfSize(Class aClass, SEL oldSEL, SEL newSEL
 //}
 
 - (UIFont *)myFontWithSize:(CGFloat)fontSize{
- 
+    
     float coefficient = [HTMIUserdefaultHelper defaultLoadNewCoefficient];
     
     return [self myFontWithSize:fontSize* coefficient * [UIFont getScale]];
@@ -81,7 +81,7 @@ void bd_exchageClassMethod_systemFontOfSize(Class aClass, SEL oldSEL, SEL newSEL
 {
     float coefficient = [HTMIUserdefaultHelper defaultLoadNewCoefficient];
     
- 
+    
     return [UIFont hook_boldSystemFontOfSize:fontSize * coefficient * [UIFont getScale]];
 }
 

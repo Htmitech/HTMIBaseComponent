@@ -12,6 +12,7 @@
 #import <objc/runtime.h>
 #import "UIFont+HTMIFont.h"
 
+
 @interface UIView (DZNConstraintBasedLayoutExtensions)
 
 - (NSLayoutConstraint *)equallyRelatedConstraintWithView:(UIView *)view attribute:(NSLayoutAttribute)attribute;
@@ -146,7 +147,7 @@ static char const * const kEmptyDataSetView =       "emptyDataSetView";
         
         UICollectionView *collectionView = (UICollectionView *)self;
         id <UICollectionViewDataSource> dataSource = collectionView.dataSource;
-
+        
         NSInteger sections = 1;
         
         if (dataSource && [dataSource respondsToSelector:@selector(numberOfSectionsInCollectionView:)]) {
@@ -534,7 +535,7 @@ static char const * const kEmptyDataSetView =       "emptyDataSetView";
         [view setupConstraints];
         
         [UIView performWithoutAnimation:^{
-            [view layoutIfNeeded];            
+            [view layoutIfNeeded];
         }];
         
         // Configure scroll permission
