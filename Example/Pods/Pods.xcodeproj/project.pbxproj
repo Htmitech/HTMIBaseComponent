@@ -67,6 +67,28 @@
 		363F6E61C48D849956E72B5CD10729F0 /* UIView+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E2BBFBD6E275A97D8DC5B598D722745 /* UIView+Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3676D0C9C83A080446697FF75DDC8E05 /* HTMIUserdefaultHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C27954EC59249C6D28AC6A2F5CDD18F8 /* HTMIUserdefaultHelper.m */; };
 		376B5A7C41BCAFBC81F70F4698087A27 /* NSSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A0A49A807269133A211EEE5547C6F4C1 /* NSSet+BlocksKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37B436632094485E007E46B4 /* UIViewController+HTMINoBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B436452094485E007E46B4 /* UIViewController+HTMINoBase.h */; };
+		37B436642094485E007E46B4 /* HTMIBasedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B436462094485E007E46B4 /* HTMIBasedViewModel.m */; };
+		37B436662094485E007E46B4 /* HTMIViewModelServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B436482094485E007E46B4 /* HTMIViewModelServices.h */; };
+		37B436672094485E007E46B4 /* NSObject+HTMINoBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B436492094485E007E46B4 /* NSObject+HTMINoBase.h */; };
+		37B436682094485E007E46B4 /* UIView+HTMINoBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4364A2094485E007E46B4 /* UIView+HTMINoBase.m */; };
+		37B4366A2094485E007E46B4 /* HTMITableViewCellProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B4364C2094485E007E46B4 /* HTMITableViewCellProtocol.h */; };
+		37B4366C2094485E007E46B4 /* HTMIViewModelNavigationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4364E2094485E007E46B4 /* HTMIViewModelNavigationImpl.m */; };
+		37B4366D2094485E007E46B4 /* HTMINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4364F2094485E007E46B4 /* HTMINavigationController.m */; };
+		37B4366E2094485E007E46B4 /* HTMICurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B436502094485E007E46B4 /* HTMICurrentViewController.m */; };
+		37B4366F2094485E007E46B4 /* HTMIViewModelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B436512094485E007E46B4 /* HTMIViewModelProtocol.h */; };
+		37B436712094485E007E46B4 /* HTMIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B436532094485E007E46B4 /* HTMIBaseViewController.m */; };
+		37B436732094485E007E46B4 /* HTMIViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B436552094485E007E46B4 /* HTMIViewProtocol.h */; };
+		37B436742094485E007E46B4 /* HTMIBasedViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B436562094485E007E46B4 /* HTMIBasedViewModel.h */; };
+		37B436752094485E007E46B4 /* UIViewController+HTMINoBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B436572094485E007E46B4 /* UIViewController+HTMINoBase.m */; };
+		37B436762094485E007E46B4 /* HTMIViewModelNavigationImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B436582094485E007E46B4 /* HTMIViewModelNavigationImpl.h */; };
+		37B436782094485E007E46B4 /* HTMIViewControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B4365A2094485E007E46B4 /* HTMIViewControllerProtocol.h */; };
+		37B4367A2094485E007E46B4 /* UIView+HTMINoBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B4365C2094485E007E46B4 /* UIView+HTMINoBase.h */; };
+		37B4367B2094485E007E46B4 /* NSObject+HTMINoBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4365D2094485E007E46B4 /* NSObject+HTMINoBase.m */; };
+		37B4367C2094485E007E46B4 /* HTMITableViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B4365E2094485E007E46B4 /* HTMITableViewProtocol.h */; };
+		37B4367D2094485E007E46B4 /* HTMICurrentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B4365F2094485E007E46B4 /* HTMICurrentViewController.h */; };
+		37B4367E2094485E007E46B4 /* HTMINavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B436602094485E007E46B4 /* HTMINavigationController.h */; };
+		37B4367F2094485E007E46B4 /* HTMIBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B436612094485E007E46B4 /* HTMIBaseViewController.h */; };
 		37D3C31162C8101504625B4ECAF821F8 /* UIView+JKConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D4749D0C7BDFA1B09F7872373B678DF /* UIView+JKConstraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3961814F6F067411FD5DB7BE65B83C45 /* UIBarButtonItem+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9781FA3773C404F95726D009A14C03A4 /* UIBarButtonItem+BlocksKit.m */; };
 		3A8A3FE2F2ADAE40FD1C3ED72C13E043 /* HTMISettingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 189FEE659FB01F478BEFA756AB2398FA /* HTMISettingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -405,6 +427,28 @@
 		36BD46B367720EAA002A12244496531D /* UIActionSheet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+BlocksKit.h"; path = "BlocksKit/UIKit/UIActionSheet+BlocksKit.h"; sourceTree = "<group>"; };
 		372EDCEE99484336333B69B1BAB9DB62 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3765A4A5CCD2CD9D28A118C0BC91C72C /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		37B436452094485E007E46B4 /* UIViewController+HTMINoBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HTMINoBase.h"; sourceTree = "<group>"; };
+		37B436462094485E007E46B4 /* HTMIBasedViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMIBasedViewModel.m; sourceTree = "<group>"; };
+		37B436482094485E007E46B4 /* HTMIViewModelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIViewModelServices.h; sourceTree = "<group>"; };
+		37B436492094485E007E46B4 /* NSObject+HTMINoBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HTMINoBase.h"; sourceTree = "<group>"; };
+		37B4364A2094485E007E46B4 /* UIView+HTMINoBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HTMINoBase.m"; sourceTree = "<group>"; };
+		37B4364C2094485E007E46B4 /* HTMITableViewCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMITableViewCellProtocol.h; sourceTree = "<group>"; };
+		37B4364E2094485E007E46B4 /* HTMIViewModelNavigationImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMIViewModelNavigationImpl.m; sourceTree = "<group>"; };
+		37B4364F2094485E007E46B4 /* HTMINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMINavigationController.m; sourceTree = "<group>"; };
+		37B436502094485E007E46B4 /* HTMICurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMICurrentViewController.m; sourceTree = "<group>"; };
+		37B436512094485E007E46B4 /* HTMIViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIViewModelProtocol.h; sourceTree = "<group>"; };
+		37B436532094485E007E46B4 /* HTMIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMIBaseViewController.m; sourceTree = "<group>"; };
+		37B436552094485E007E46B4 /* HTMIViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIViewProtocol.h; sourceTree = "<group>"; };
+		37B436562094485E007E46B4 /* HTMIBasedViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIBasedViewModel.h; sourceTree = "<group>"; };
+		37B436572094485E007E46B4 /* UIViewController+HTMINoBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HTMINoBase.m"; sourceTree = "<group>"; };
+		37B436582094485E007E46B4 /* HTMIViewModelNavigationImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIViewModelNavigationImpl.h; sourceTree = "<group>"; };
+		37B4365A2094485E007E46B4 /* HTMIViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIViewControllerProtocol.h; sourceTree = "<group>"; };
+		37B4365C2094485E007E46B4 /* UIView+HTMINoBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HTMINoBase.h"; sourceTree = "<group>"; };
+		37B4365D2094485E007E46B4 /* NSObject+HTMINoBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HTMINoBase.m"; sourceTree = "<group>"; };
+		37B4365E2094485E007E46B4 /* HTMITableViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMITableViewProtocol.h; sourceTree = "<group>"; };
+		37B4365F2094485E007E46B4 /* HTMICurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMICurrentViewController.h; sourceTree = "<group>"; };
+		37B436602094485E007E46B4 /* HTMINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMINavigationController.h; sourceTree = "<group>"; };
+		37B436612094485E007E46B4 /* HTMIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMIBaseViewController.h; sourceTree = "<group>"; };
 		3ADCF3BCB7B6BA84FCBAC1518DCE2C62 /* UIView+Common.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
 		3B03672D991204B4E09CBA1696546795 /* Pods_HTMIBaseComponent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTMIBaseComponent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B92373EB3E52491D44985562504D992 /* UIImage+FileImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+FileImage.h"; path = "HTMIBaseComponent/Classes/UIImage+FileImage.h"; sourceTree = "<group>"; };
@@ -764,6 +808,7 @@
 		2B67CE28825C8B8B89A317D156D24E26 /* HTMIBaseComponent */ = {
 			isa = PBXGroup;
 			children = (
+				37B436442094485E007E46B4 /* Base */,
 				7CAB119ED6260990501FB9F0BCC2EE2E /* Foundation+Log.m */,
 				189FEE659FB01F478BEFA756AB2398FA /* HTMISettingManager.h */,
 				2659A21E2E8BF8BA8FD7C9F36505E1F0 /* HTMISettingManager.m */,
@@ -942,6 +987,36 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		37B436442094485E007E46B4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				37B436562094485E007E46B4 /* HTMIBasedViewModel.h */,
+				37B436462094485E007E46B4 /* HTMIBasedViewModel.m */,
+				37B436612094485E007E46B4 /* HTMIBaseViewController.h */,
+				37B436532094485E007E46B4 /* HTMIBaseViewController.m */,
+				37B4365F2094485E007E46B4 /* HTMICurrentViewController.h */,
+				37B436502094485E007E46B4 /* HTMICurrentViewController.m */,
+				37B436602094485E007E46B4 /* HTMINavigationController.h */,
+				37B4364F2094485E007E46B4 /* HTMINavigationController.m */,
+				37B4364C2094485E007E46B4 /* HTMITableViewCellProtocol.h */,
+				37B4365E2094485E007E46B4 /* HTMITableViewProtocol.h */,
+				37B4365A2094485E007E46B4 /* HTMIViewControllerProtocol.h */,
+				37B436582094485E007E46B4 /* HTMIViewModelNavigationImpl.h */,
+				37B4364E2094485E007E46B4 /* HTMIViewModelNavigationImpl.m */,
+				37B436512094485E007E46B4 /* HTMIViewModelProtocol.h */,
+				37B436482094485E007E46B4 /* HTMIViewModelServices.h */,
+				37B436552094485E007E46B4 /* HTMIViewProtocol.h */,
+				37B436492094485E007E46B4 /* NSObject+HTMINoBase.h */,
+				37B4365D2094485E007E46B4 /* NSObject+HTMINoBase.m */,
+				37B4365C2094485E007E46B4 /* UIView+HTMINoBase.h */,
+				37B4364A2094485E007E46B4 /* UIView+HTMINoBase.m */,
+				37B436452094485E007E46B4 /* UIViewController+HTMINoBase.h */,
+				37B436572094485E007E46B4 /* UIViewController+HTMINoBase.m */,
+			);
+			name = Base;
+			path = HTMIBaseComponent/Classes/Base;
 			sourceTree = "<group>";
 		};
 		38DEFC0810409E619CFF5BE7E5A6992D /* Support Files */ = {
@@ -1247,6 +1322,7 @@
 				5AEBAF1DEC882437852E5A573295FAAB /* HTMIBaseComponent-umbrella.h in Headers */,
 				4C6C4EA3B315FBFE1E4FBD5509375C54 /* HTMIFontHeader.h in Headers */,
 				58384E166C5157A5F134CA88DF40F260 /* HTMIGTMBase64.h in Headers */,
+				37B436762094485E007E46B4 /* HTMIViewModelNavigationImpl.h in Headers */,
 				2FBF5347662EB4D78E660217F8935567 /* HTMIGTMDefines.h in Headers */,
 				3A8A3FE2F2ADAE40FD1C3ED72C13E043 /* HTMISettingManager.h in Headers */,
 				B87F41193EB1953BE8916CA256364133 /* HTMIUserdefaultHelper.h in Headers */,
@@ -1256,8 +1332,10 @@
 				8F8656E2631DFE3A643E43B5276B9840 /* NSData+FormData.h in Headers */,
 				44D55F9613821002F6D937F1FC67630B /* NSDictionary+HTMIExtension.h in Headers */,
 				934C4BB9FC0492BF8BE4CD747F064CB6 /* NSDictionary+LocaleLog.h in Headers */,
+				37B4366F2094485E007E46B4 /* HTMIViewModelProtocol.h in Headers */,
 				6F03C336DF8B7FA30F3821A712E7D55F /* NSObject+HTMIObject.h in Headers */,
 				F7F3CAD5B56296D4892B8F13864BC8D0 /* NSObject+JudgeNull.h in Headers */,
+				37B436742094485E007E46B4 /* HTMIBasedViewModel.h in Headers */,
 				401817D0B4A652751432FB0EE7A439B1 /* NSString+Base64.h in Headers */,
 				C7F191CF166FFEDC47CDE3762529CAF2 /* NSString+BundlePath.h in Headers */,
 				D8E146B1770D8A1FC8C51C43A87C7BD9 /* NSString+Extention.h in Headers */,
@@ -1266,6 +1344,7 @@
 				BCD61CD482B871DD2A18C71173BD0F38 /* NSString+HTMISize.h in Headers */,
 				D57FE330AB4803BDF1DA27105D2CA9DC /* NSString+HTMITime.h in Headers */,
 				953491D1F35F3E432EFE9BCB9916F61A /* ObjcRuntime.h in Headers */,
+				37B436782094485E007E46B4 /* HTMIViewControllerProtocol.h in Headers */,
 				C54877E2973876768147ECB8A79EF825 /* SVProgressHUD+Swizzling.h in Headers */,
 				16C31DE911C61601BA63476703757D93 /* UIApplication+JKApplicationSize.h in Headers */,
 				4D73ADBEEC0FF6B2B2D748A2929B3C3D /* UIApplication+JKKeyboardFrame.h in Headers */,
@@ -1273,8 +1352,11 @@
 				0018FE5C53926DC6567E80120BD005ED /* UIBadgeView.h in Headers */,
 				8F045306D6A3818E2200E17094938563 /* UIBarButtonItem+Extention.h in Headers */,
 				D11B1B1E6F693BE68DDB4D6F8DA5A629 /* UIButton+Badge.h in Headers */,
+				37B4367E2094485E007E46B4 /* HTMINavigationController.h in Headers */,
 				5BCFF8DD13FA1A28D907914A36B8D78D /* UIButton+Delay.h in Headers */,
 				E99606A4F4BA7F4B7F898494E8B98B90 /* UIButton+touch.h in Headers */,
+				37B436662094485E007E46B4 /* HTMIViewModelServices.h in Headers */,
+				37B436672094485E007E46B4 /* NSObject+HTMINoBase.h in Headers */,
 				0E12166106DB046F7855F882294FCAE8 /* UIColor+expanded.h in Headers */,
 				EC763A5E52D81CB0A0227A53478753C3 /* UIColor+Hex.h in Headers */,
 				2665EA2A5168DE17CAAE93E0D095EA2D /* UIDevice+HTMIDevice.h in Headers */,
@@ -1288,6 +1370,7 @@
 				043CC622032B6CCB32DD4B88AE7C685B /* UILabel+Utility.h in Headers */,
 				6D2386F64F7ECD0400BDE828951D1984 /* UINavigationBar+myNavigationBar.h in Headers */,
 				DB89BECDEF4E83165FE2B55C624FC465 /* UIResponder+JKChain.h in Headers */,
+				37B436732094485E007E46B4 /* HTMIViewProtocol.h in Headers */,
 				86AF32F081FB4BD1BC68FAD0B9DEBC0B /* UIResponder+JKFirstResponder.h in Headers */,
 				A32EEC43A62EF0B1FCB8FDDE685B4F14 /* UIScreen+JKFrame.h in Headers */,
 				02917B8412D764E4D556C16801452968 /* UIScrollView+EmptyDataSet.h in Headers */,
@@ -1295,16 +1378,21 @@
 				62139B98AA3184CD324175E4237BC3FE /* UISearchBar+HTMISearchBar.h in Headers */,
 				CB7893E55B4892373F37D3FB11E504D7 /* UITableViewCell+GetCell.h in Headers */,
 				363F6E61C48D849956E72B5CD10729F0 /* UIView+Common.h in Headers */,
+				37B436632094485E007E46B4 /* UIViewController+HTMINoBase.h in Headers */,
 				060AD8402FE5F28D92C7137CB15B0774 /* UIView+Extension.h in Headers */,
 				6B8087980E52A11937D8EEE882851282 /* UIView+FontSize.h in Headers */,
 				87B97B6AA5C24282ECD1C4492DE85310 /* UIView+JKAnimation.h in Headers */,
 				DE3CC7EF3613E640D2D42A1BE9DD2F05 /* UIView+JKBlockGesture.h in Headers */,
 				37D3C31162C8101504625B4ECAF821F8 /* UIView+JKConstraints.h in Headers */,
+				37B4367F2094485E007E46B4 /* HTMIBaseViewController.h in Headers */,
 				220A2F7C24C2AACB02021D3AE4D44520 /* UIView+JKCustomBorder.h in Headers */,
+				37B4367A2094485E007E46B4 /* UIView+HTMINoBase.h in Headers */,
 				B8D8EF8E01A40B93FBECFD5DE5023C86 /* UIView+JKDraggable.h in Headers */,
+				37B4366A2094485E007E46B4 /* HTMITableViewCellProtocol.h in Headers */,
 				5F469A2AE8104BA9756FEE0FEDC8B775 /* UIView+JKFind.h in Headers */,
 				A8C6D8F7AE30F1BF5B3F896B0158B380 /* UIView+JKFrame.h in Headers */,
 				FA56A6816B9448567D2A84D21F8DAA73 /* UIView+JKNib.h in Headers */,
+				37B4367C2094485E007E46B4 /* HTMITableViewProtocol.h in Headers */,
 				A2787929355A346C4D91041C0D6F504F /* UIView+JKRecursion.h in Headers */,
 				59F8E6AE5E7342903887E5545B10E46E /* UIView+JKScreenshot.h in Headers */,
 				3B3AE619305BF66778AB84972A784918 /* UIView+JKShake.h in Headers */,
@@ -1315,6 +1403,7 @@
 				B100314FC711843E33AABC6B2306FCE0 /* UIViewController+BackButtonHandler.h in Headers */,
 				7CF2D62D48E4C5C9888FE41545CD0BEF /* UIViewController+SetTitleFont.h in Headers */,
 				9060329ADD74A4ACBD5DE8156E059FE0 /* UIViewController+Swizzle.h in Headers */,
+				37B4367D2094485E007E46B4 /* HTMICurrentViewController.h in Headers */,
 				8785383022CA05105CC5E8FDD3DDCEB3 /* UIViewController+Utility.h in Headers */,
 				C8BAE8E0FDBE18D5AF5C0E4A29D5B633 /* UIWindow+HTMIHierarchy.h in Headers */,
 			);
@@ -1658,6 +1747,7 @@
 				584E628EED50DC8D03925DB1E09A7F0B /* Foundation+Log.m in Sources */,
 				B1BC16391EB2B62CD606C1A73B5EDE1B /* HTMIBaseComponent-dummy.m in Sources */,
 				655BA68473818663A7B79D6F797EF995 /* HTMIGTMBase64.m in Sources */,
+				37B436712094485E007E46B4 /* HTMIBaseViewController.m in Sources */,
 				1A6F987B6D25A3EF9079836E7335A72E /* HTMISettingManager.m in Sources */,
 				3676D0C9C83A080446697FF75DDC8E05 /* HTMIUserdefaultHelper.m in Sources */,
 				27BB8560CA2B5FC3B6204476318A91E1 /* NSArray+HTMIExtension.m in Sources */,
@@ -1669,18 +1759,22 @@
 				EB5F6B185BBFBE2224173B04D8B2A78E /* NSObject+HTMIObject.m in Sources */,
 				EDA0B6C2095EE5ACEF1B910DA036FD11 /* NSObject+JudgeNull.m in Sources */,
 				0CDAD9BA60B561433F4C5D40344F138E /* NSString+Base64.m in Sources */,
+				37B4366C2094485E007E46B4 /* HTMIViewModelNavigationImpl.m in Sources */,
 				21B57F5679C3BE5FC19B4AAE688E410F /* NSString+BundlePath.m in Sources */,
 				6D9D9A3C482FB2F2A2FE679A6993E925 /* NSString+Extention.m in Sources */,
 				F302165E4A8C8F3AB90D2FFC2972C8B8 /* NSString+Hash.m in Sources */,
 				E4F1CB73C2684745F472748CE98D1AB5 /* NSString+HTMISize.m in Sources */,
 				DC62996DD5AF2D3BE2B9E99A100E4AB7 /* NSString+HTMISize.m in Sources */,
 				723D59A8D789B3F830FC41829A4E61F9 /* NSString+HTMITime.m in Sources */,
+				37B4367B2094485E007E46B4 /* NSObject+HTMINoBase.m in Sources */,
 				F8CCAFF820198040B09B7E56A9C07984 /* NullSafe.m in Sources */,
 				14CBFDC9CE62620EEDB32FB8F315FE50 /* ObjcRuntime.m in Sources */,
 				D839680D5F555FDC004A194435FD2497 /* SVProgressHUD+Swizzling.m in Sources */,
 				F25D137A0B673384419549E8B85CB5CC /* UIApplication+JKApplicationSize.m in Sources */,
+				37B436682094485E007E46B4 /* UIView+HTMINoBase.m in Sources */,
 				73174244C335F5C917BEBD918F862FDB /* UIApplication+JKKeyboardFrame.m in Sources */,
 				E73A2103D73DFD336FB56ED32263F5B7 /* UIApplication+JKNetworkActivityIndicator.m in Sources */,
+				37B436752094485E007E46B4 /* UIViewController+HTMINoBase.m in Sources */,
 				B54350C1697793C83042E1B8D0803DFF /* UIBadgeView.m in Sources */,
 				60C31F19748E1D1801E5EAAF637FAC19 /* UIBarButtonItem+Extention.m in Sources */,
 				18350194F5B7B112624167F8E7AE39E4 /* UIButton+Badge.m in Sources */,
@@ -1721,8 +1815,11 @@
 				2B0E8FC135499A80B688DAFA5B0029E9 /* UIView+JKShake.m in Sources */,
 				485EF8844F42CD373E154A5061CF02C5 /* UIView+JKToast.m in Sources */,
 				67E74DC0D963DE46FFA72902047E1479 /* UIView+JKVisuals.m in Sources */,
+				37B436642094485E007E46B4 /* HTMIBasedViewModel.m in Sources */,
 				477C47857D0DAE9655879C2119663A9D /* UIView+PrintSubviews.m in Sources */,
+				37B4366D2094485E007E46B4 /* HTMINavigationController.m in Sources */,
 				32175145B8F479365650F6959BCC2B8C /* UIView+UIScreenDisplaying.m in Sources */,
+				37B4366E2094485E007E46B4 /* HTMICurrentViewController.m in Sources */,
 				BBA5797E8F99740F77ECBD9719F76D98 /* UIViewController+BackButtonHandler.m in Sources */,
 				3AE9B661D565CE30DF6A41AEAFA14DBB /* UIViewController+SetTitleFont.m in Sources */,
 				95A1CD8224E31957BC6AECEA74F3D027 /* UIViewController+Swizzle.m in Sources */,

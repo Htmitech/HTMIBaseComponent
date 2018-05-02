@@ -65,7 +65,7 @@
 		C54823D1BB6ED595925260A0 /* Pods_HTMIBaseComponent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTMIBaseComponent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1D266E7D3D3D72D12C8723 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DF2F225B975587FA68152A1F /* Pods_HTMIBaseComponent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTMIBaseComponent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F753089BE1263BC82BD73915 /* HTMIBaseComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HTMIBaseComponent.podspec; path = ../HTMIBaseComponent.podspec; sourceTree = "<group>"; };
+		F753089BE1263BC82BD73915 /* HTMIBaseComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HTMIBaseComponent.podspec; path = ../HTMIBaseComponent.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FF78A401EC77060AD65EDFC1 /* Pods-HTMIBaseComponent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTMIBaseComponent_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HTMIBaseComponent_Example/Pods-HTMIBaseComponent_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

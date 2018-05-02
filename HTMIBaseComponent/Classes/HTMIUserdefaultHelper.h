@@ -68,17 +68,17 @@
  */
 +(NSDictionary *)defaultLoadContext;
 
-/**
- 保存portalMessage字典对象
- 
- */
-+(void)defaultSavePortalMessage:(NSDictionary *)portalMessage;
+///**
+// 保存portalMessage字典对象
+//
+// */
+//+(void)defaultSavePortalMessage:(NSDictionary *)portalMessage;
 
-/**
- 读取 portalMessage
-
- */
-+(NSDictionary *)defaultLoadPortalMessage;
+///**
+// 读取 portalMessage
+//
+// */
+//+(NSDictionary *)defaultLoadPortalMessage;
 
 
 +(NSInteger)defaultLoadNewFontSizeCoefficient;
@@ -127,14 +127,20 @@
 //refreshToken
 +(NSString *)defaultLoadRefreshToken;
 +(void)defaultSaveRefreshToken:(NSString *)a;
++(void)htmi_defaultSaveRefreshToken:(NSString *)a;
 
 //accessToken
 +(NSString*)defaultLoadAccessToken;
 +(void)defaultSaveAccessToken:(NSString *)a;
++(void)htmi_defaultSaveAccessToken:(NSString *)a;
 
 //PortalID
-+(NSString*)defaultLoadPortalID;
++(NSString *)defaultLoadPortalID;
 +(void)defaultSavePortalID:(NSString *)a;
+
+//PortalIDArray
++(NSArray *)defaultLoadPortalIDArray;
++(void)defaultSavePortalIDArray:(NSArray *)a;
 
 //经度
 + (NSString*)defaultLoadLongitude;

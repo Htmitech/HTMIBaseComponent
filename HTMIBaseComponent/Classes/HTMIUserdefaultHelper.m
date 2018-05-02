@@ -20,6 +20,8 @@
 
 @implementation HTMIUserdefaultHelper
 
+NSString * const First_Start = @"firstStartMXApp";
+
 +(NSMutableArray*)defaultLoadNotificationArray
 {
     NSUserDefaults *defaults= [NSUserDefaults standardUserDefaults];
@@ -84,21 +86,23 @@
 }
 
 +(void)defaultSaveContext:(NSDictionary *)context{
+    //    HTMILogInfo(@"Context:%@",context);
     [USERDEFAULT setObject:context forKey:@"kContextDictionary"];
     [USERDEFAULT synchronize];
 }
-+(void)defaultSavePortalMessage:(NSDictionary *)portalMessage{
-    [USERDEFAULT setObject:portalMessage forKey:@"kPortalMessage"];
-    [USERDEFAULT synchronize];
-}
+//+(void)defaultSavePortalMessage:(NSDictionary *)portalMessage{
+////    HTMILogInfo(@"PortalMessage:%@",portalMessage);
+//    [USERDEFAULT setObject:portalMessage forKey:@"kPortalMessage"];
+//    [USERDEFAULT synchronize];
+//}
+//+(NSDictionary *)defaultLoadPortalMessage{
+//
+//    return [USERDEFAULT objectForKey:@"kPortalMessage"] ==  nil ? @{}:[USERDEFAULT objectForKey:@"kPortalMessage"];
+//}
 
 +(NSDictionary *)defaultLoadContext{
     
     return [USERDEFAULT objectForKey:@"kContextDictionary"] ==  nil ? @{}:[USERDEFAULT objectForKey:@"kContextDictionary"];
-}
-+(NSDictionary *)defaultLoadPortalMessage{
-    
-    return [USERDEFAULT objectForKey:@"kPortalMessage"] ==  nil ? @{}:[USERDEFAULT objectForKey:@"kPortalMessage"];
 }
 
 +(NSInteger)defaultLoadNewFontSizeCoefficient{
@@ -236,29 +240,44 @@
 //refreshToken
 +(NSString *)defaultLoadRefreshToken;
 {
-    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults] ;
-    return [defaults objectForKey:@"htmiRefreshToken"] ==  nil ? @"": [defaults objectForKey:@"htmiRefreshToken"];
+    //    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults] ;
+    return [USERDEFAULT objectForKey:@"widget_htmiRefreshToken"] ==  nil ? @"": [USERDEFAULT objectForKey:@"widget_htmiRefreshToken"];
 }
 
 +(void)defaultSaveRefreshToken:(NSString *)a;
 {
-    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-    [defaults setObject:a  forKey:@"htmiRefreshToken"];
-    [defaults synchronize];
+    //    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    [USERDEFAULT setObject:a  forKey:@"widget_htmiRefreshToken"];
+    [USERDEFAULT synchronize];
+    
+    [self htmi_defaultSaveRefreshToken:
+     [NSString stringWithFormat:@"%@",a]];
+}
+
++(void)htmi_defaultSaveRefreshToken:(NSString *)a {
+    [USERDEFAULT setObject:a  forKey:@"htmiRefreshToken"];
+    [USERDEFAULT synchronize];
 }
 
 //accessToken
 +(NSString*)defaultLoadAccessToken;
 {
-    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults] ;
-    return [defaults objectForKey:@"htmiAccessToken"] ==  nil ? @"": [defaults objectForKey:@"htmiAccessToken"];
+    //    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults] ;
+    return [USERDEFAULT objectForKey:@"widget_htmiAccessToken"] ==  nil ? @"": [USERDEFAULT objectForKey:@"widget_htmiAccessToken"];
 }
 
 +(void)defaultSaveAccessToken:(NSString *)a;
 {
-    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-    [defaults setObject:a  forKey:@"htmiAccessToken"];
-    [defaults synchronize];
+    //    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    [USERDEFAULT setObject:a  forKey:@"widget_htmiAccessToken"];
+    [USERDEFAULT synchronize];
+    
+    [self htmi_defaultSaveAccessToken:[NSString stringWithFormat:@"%@",a]];
+}
+
++(void)htmi_defaultSaveAccessToken:(NSString *)a {
+    [USERDEFAULT setObject:a  forKey:@"htmiAccessToken"];
+    [USERDEFAULT synchronize];
 }
 //PortalID
 +(NSString*)defaultLoadPortalID
@@ -274,7 +293,19 @@
     [defaults synchronize];
 }
 
+//PortalIDArray
++(NSArray*)defaultLoadPortalIDArray
+{
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults] ;
+    return [defaults objectForKey:@"HTMIPortalIDArray"] ==  nil ? @"": [defaults objectForKey:@"HTMIPortalIDArray"];
+}
 
++(void)defaultSavePortalIDArray:(NSArray *)a
+{
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    [defaults setObject:a  forKey:@"HTMIPortalIDArray"];
+    [defaults synchronize];
+}
 
 //经度
 + (NSString*)defaultLoadLongitude{
@@ -356,12 +387,12 @@
 //应用程序第一次使用
 + (BOOL)defaultLoadSystemFirstStart {
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-    return [defaults boolForKey:@"firstStartMXApp"];
+    return [defaults boolForKey:First_Start];
 }
 
 + (void)defaultSaveSystemFirstStart:(BOOL)a {
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-    [defaults setBool:a  forKey:@"firstStartMXApp"];
+    [defaults setBool:a  forKey:First_Start];
     [defaults synchronize];
 }
 

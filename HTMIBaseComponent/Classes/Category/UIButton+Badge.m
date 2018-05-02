@@ -16,7 +16,7 @@
     if (isShow) {
         
         UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.backgroundColor = [UIColor colorWithRed:220 green:86 blue:86 alpha:1];
+        imageView.backgroundColor = [UIColor colorWithRed:220.0/255.0 green:86.0/255.0 blue:86.0/255.0 alpha:1];
         imageView.layer.masksToBounds = YES;
         imageView.layer.cornerRadius = 5;
         imageView.layer.borderColor = [UIColor whiteColor].CGColor;
