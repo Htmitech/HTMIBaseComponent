@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "HTMIViewProtocol.h"
+
 @protocol HTMITableViewProtocol <HTMIViewProtocol>
 
 /**
