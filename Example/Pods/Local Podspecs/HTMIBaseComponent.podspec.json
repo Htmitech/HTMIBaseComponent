@@ -45,10 +45,14 @@
       "name": "Category",
       "requires_arc": true,
       "public_header_files": [
-        "HTMIBaseComponent/Classes/Category/*.h"
+        "HTMIBaseComponent/Classes/Category/*.h",
+        "HTMIBaseComponent/Classes/SettingManager/*.h",
+        "HTMIBaseComponent/Classes/UserDefault/*.h"
       ],
       "source_files": [
-        "HTMIBaseComponent/Classes/Category/*"
+        "HTMIBaseComponent/Classes/Category/*",
+        "HTMIBaseComponent/Classes/SettingManager/*",
+        "HTMIBaseComponent/Classes/UserDefault/*"
       ]
     },
     {
@@ -69,26 +73,6 @@
       ],
       "source_files": [
         "HTMIBaseComponent/Classes/ObjcRuntime/*"
-      ]
-    },
-    {
-      "name": "SettingManager",
-      "requires_arc": true,
-      "public_header_files": [
-        "HTMIBaseComponent/Classes/SettingManager/*.h"
-      ],
-      "source_files": [
-        "HTMIBaseComponent/Classes/SettingManager/*"
-      ]
-    },
-    {
-      "name": "UserDefault",
-      "requires_arc": true,
-      "public_header_files": [
-        "HTMIBaseComponent/Classes/UserDefault/*.h"
-      ],
-      "source_files": [
-        "HTMIBaseComponent/Classes/UserDefault/*"
       ]
     }
   ]

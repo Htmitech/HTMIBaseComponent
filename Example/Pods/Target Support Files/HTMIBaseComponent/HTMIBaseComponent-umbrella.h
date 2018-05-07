@@ -171,11 +171,11 @@
 #import "UIViewController+Swizzle.h"
 #import "UIViewController+Utility.h"
 #import "UIWindow+HTMIHierarchy.h"
+#import "HTMISettingManager.h"
+#import "HTMIUserdefaultHelper.h"
 #import "HTMIGTMBase64.h"
 #import "HTMIGTMDefines.h"
 #import "ObjcRuntime.h"
-#import "HTMISettingManager.h"
-#import "HTMIUserdefaultHelper.h"
 
 FOUNDATION_EXPORT double HTMIBaseComponentVersionNumber;
 FOUNDATION_EXPORT const unsigned char HTMIBaseComponentVersionString[];

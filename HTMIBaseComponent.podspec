@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'HTMIBaseComponent'
-    s.version          = '1.2.0'
+    s.version          = '1.1.8'
     s.summary          = 'base category component'
     
     # This description is used to generate tags and improve search results.
@@ -43,10 +43,14 @@ Pod::Spec.new do |s|
     s.subspec 'Category' do |category|
         category.requires_arc        = true
         category.public_header_files = [
-        'HTMIBaseComponent/Classes/Category/*.h'
+        'HTMIBaseComponent/Classes/Category/*.h',
+        'HTMIBaseComponent/Classes/SettingManager/*.h',
+        'HTMIBaseComponent/Classes/UserDefault/*.h'
         ]
         category.source_files = [
-        'HTMIBaseComponent/Classes/Category/*'
+        'HTMIBaseComponent/Classes/Category/*',
+        'HTMIBaseComponent/Classes/SettingManager/*',
+        'HTMIBaseComponent/Classes/UserDefault/*'
         ]
     end
     
@@ -70,25 +74,6 @@ Pod::Spec.new do |s|
         ]
     end
     
-    s.subspec 'SettingManager' do |settingManager|
-        settingManager.requires_arc        = true
-        settingManager.public_header_files = [
-        'HTMIBaseComponent/Classes/SettingManager/*.h'
-        ]
-        settingManager.source_files = [
-        'HTMIBaseComponent/Classes/SettingManager/*'
-        ]
-    end
-    
-    s.subspec 'UserDefault' do |userDefault|
-        userDefault.requires_arc        = true
-        userDefault.public_header_files = [
-        'HTMIBaseComponent/Classes/UserDefault/*.h'
-        ]
-        userDefault.source_files = [
-        'HTMIBaseComponent/Classes/UserDefault/*'
-        ]
-    end
     
     s.dependency 'SVProgressHUD'    , '~> 2.1.2'
     s.dependency 'Masonry', '~> 1.0.2'

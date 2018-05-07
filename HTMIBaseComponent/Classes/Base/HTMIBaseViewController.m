@@ -7,12 +7,7 @@
 //
 
 #import "HTMIBaseViewController.h"
-
-#import "HTMIUserdefaultHelper.h"
-//应用程序级别的设置
-#import "HTMISettingManager.h"
 #import "SVProgressHUD.h"
-
 
 #ifndef kDefaultBackgroundColor
 

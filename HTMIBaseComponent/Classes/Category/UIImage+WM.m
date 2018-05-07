@@ -10,7 +10,6 @@
 #import "NSString+Extention.h"
 #import "UIColor+Hex.h"
 #import "HTMISettingManager.h"
-//#import "HTMIPrivateSettingManager.h"
 
 @implementation UIImage (WM)
 
