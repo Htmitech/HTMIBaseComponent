@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-//#import "HTMIConst.h"
-//image分类
-//#import "UIImage+WM.h"
-//新增字体方法
 #import "UIFont+HTMIFont.h"
 
 #ifndef HTMIApplicationHueType_h

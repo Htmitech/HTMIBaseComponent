@@ -10,10 +10,6 @@
 
 #import "HTMISettingManager.h"
 
-//#import "HTMIUserdefineModel.h"
-
-//#import "HTMIDBManager.h"
-
 #define USERDEFAULT [NSUserDefaults standardUserDefaults]
 #define HTMI_FONT_COEFFICIENT_New @"HTMIFontSizeCoefficient"
 #define HTMI_FONT_COEFFICIENT_Old @"HTMIOldFontSizeCoefficient"

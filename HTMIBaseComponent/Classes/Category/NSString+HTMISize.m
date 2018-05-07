@@ -7,6 +7,7 @@
 //
 
 #import "NSString+HTMISize.h"
+
 #import "UIFont+HTMIFont.h"
 
 @implementation NSString (HTMISize)

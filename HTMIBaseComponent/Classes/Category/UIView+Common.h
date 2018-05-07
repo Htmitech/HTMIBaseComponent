@@ -53,10 +53,10 @@ typedef NS_ENUM(NSInteger, BadgePositionType) {
 - (void)doBorderWidth:(CGFloat)width color:(UIColor *)color cornerRadius:(CGFloat)cornerRadius;
 
 - (UIViewController *)findViewController;
-- (void)addBadgeTip:(NSString *)badgeValue withCenterPosition:(CGPoint)center;
-- (void)addBadgeTip:(NSString *)badgeValue;
-- (void)addBadgePoint:(NSInteger)pointRadius withPosition:(BadgePositionType)type;
-- (void)addBadgePoint:(NSInteger)pointRadius withPointPosition:(CGPoint)point;
+//- (void)addBadgeTip:(NSString *)badgeValue withCenterPosition:(CGPoint)center;
+//- (void)addBadgeTip:(NSString *)badgeValue;
+//- (void)addBadgePoint:(NSInteger)pointRadius withPosition:(BadgePositionType)type;
+//- (void)addBadgePoint:(NSInteger)pointRadius withPointPosition:(CGPoint)point;
 - (void)removeBadgePoint;
 - (void)removeBadgeTips;
 - (void)setY:(CGFloat)y;

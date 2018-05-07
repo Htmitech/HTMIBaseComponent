@@ -8,12 +8,13 @@
 
 #import "UIView+FontSize.h"
 #import <objc/runtime.h>
-#import "HTMIFontHeader.h"
 
 #define IgnoreTagKey @"IgnoreTagKey"
 #define FontScaleKey @"FontScaleKey"
 
 #define ScrenScale [UIScreen mainScreen].bounds.size.width/320.0
+
+#define ALL_FONT_CHANGE                 @"allFontChange"
 
 @implementation UIView (FontSize)
 ///**

@@ -7,7 +7,7 @@
 //
 
 #import "HTMIBasedViewModel.h"
-//#import "HTMILoginViewModel.h"
+
 @interface HTMIBasedViewModel ()
 @property(nonatomic,strong,readwrite)id<HTMIViewModelServices> services;
 @property (nonatomic, copy, readwrite) NSDictionary *params;

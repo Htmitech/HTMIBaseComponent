@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'HTMIBaseComponent'
-    s.version          = '1.1.8'
+    s.version          = '1.1.9'
     s.summary          = 'base category component'
     
     # This description is used to generate tags and improve search results.
@@ -30,9 +30,68 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '8.0'
     s.source_files = 'HTMIBaseComponent/Classes/**/*.{h,m}'
     
+    s.subspec 'Base' do |base|
+        base.requires_arc        = true
+        base.public_header_files = [
+        'HTMIBaseComponent/Classes/Base/*.h'
+        ]
+        base.source_files = [
+        'HTMIBaseComponent/Classes/Base/*'
+        ]
+    end
+    
+    s.subspec 'Category' do |category|
+        category.requires_arc        = true
+        category.public_header_files = [
+        'HTMIBaseComponent/Classes/Category/*.h'
+        ]
+        category.source_files = [
+        'HTMIBaseComponent/Classes/Category/*'
+        ]
+    end
+    
+    s.subspec 'Encryption' do |encryption|
+        encryption.requires_arc        = true
+        encryption.public_header_files = [
+        'HTMIBaseComponent/Classes/Encryption/*.h'
+        ]
+        encryption.source_files = [
+        'HTMIBaseComponent/Classes/Encryption/*'
+        ]
+    end
+    
+    s.subspec 'ObjcRuntime' do |objcRuntime|
+        objcRuntime.requires_arc        = true
+        objcRuntime.public_header_files = [
+        'HTMIBaseComponent/Classes/ObjcRuntime/*.h'
+        ]
+        objcRuntime.source_files = [
+        'HTMIBaseComponent/Classes/ObjcRuntime/*'
+        ]
+    end
+    
+    s.subspec 'SettingManager' do |settingManager|
+        settingManager.requires_arc        = true
+        settingManager.public_header_files = [
+        'HTMIBaseComponent/Classes/SettingManager/*.h'
+        ]
+        settingManager.source_files = [
+        'HTMIBaseComponent/Classes/SettingManager/*'
+        ]
+    end
+    
+    s.subspec 'UserDefault' do |userDefault|
+        userDefault.requires_arc        = true
+        userDefault.public_header_files = [
+        'HTMIBaseComponent/Classes/UserDefault/*.h'
+        ]
+        userDefault.source_files = [
+        'HTMIBaseComponent/Classes/UserDefault/*'
+        ]
+    end
+    
     s.dependency 'SVProgressHUD'    , '~> 2.1.2'
     s.dependency 'Masonry', '~> 1.0.2'
     s.dependency 'BlocksKit', '2.2.5'
-    s.dependency 'Aspects', '~> 1.4.1'
     
 end

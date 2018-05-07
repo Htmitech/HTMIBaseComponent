@@ -1,6 +1,6 @@
 {
   "name": "HTMIBaseComponent",
-  "version": "1.1.3",
+  "version": "1.1.9",
   "summary": "base category component",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Htmitech/HTMIBaseComponent",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/Htmitech/HTMIBaseComponent.git",
-    "tag": "1.1.3"
+    "tag": "1.1.9"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "HTMIBaseComponent/Classes/**/*",
+  "source_files": "HTMIBaseComponent/Classes/**/*.{h,m}",
   "dependencies": {
     "SVProgressHUD": [
       "~> 2.1.2"
@@ -29,5 +29,67 @@
     "BlocksKit": [
       "2.2.5"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "Base",
+      "requires_arc": true,
+      "public_header_files": [
+        "HTMIBaseComponent/Classes/Base/*.h"
+      ],
+      "source_files": [
+        "HTMIBaseComponent/Classes/Base/*"
+      ]
+    },
+    {
+      "name": "Category",
+      "requires_arc": true,
+      "public_header_files": [
+        "HTMIBaseComponent/Classes/Category/*.h"
+      ],
+      "source_files": [
+        "HTMIBaseComponent/Classes/Category/*"
+      ]
+    },
+    {
+      "name": "Encryption",
+      "requires_arc": true,
+      "public_header_files": [
+        "HTMIBaseComponent/Classes/Encryption/*.h"
+      ],
+      "source_files": [
+        "HTMIBaseComponent/Classes/Encryption/*"
+      ]
+    },
+    {
+      "name": "ObjcRuntime",
+      "requires_arc": true,
+      "public_header_files": [
+        "HTMIBaseComponent/Classes/ObjcRuntime/*.h"
+      ],
+      "source_files": [
+        "HTMIBaseComponent/Classes/ObjcRuntime/*"
+      ]
+    },
+    {
+      "name": "SettingManager",
+      "requires_arc": true,
+      "public_header_files": [
+        "HTMIBaseComponent/Classes/SettingManager/*.h"
+      ],
+      "source_files": [
+        "HTMIBaseComponent/Classes/SettingManager/*"
+      ]
+    },
+    {
+      "name": "UserDefault",
+      "requires_arc": true,
+      "public_header_files": [
+        "HTMIBaseComponent/Classes/UserDefault/*.h"
+      ],
+      "source_files": [
+        "HTMIBaseComponent/Classes/UserDefault/*"
+      ]
+    }
+  ]
 }

@@ -14,7 +14,37 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - HTMIBaseComponent (1.1.3):
+  - HTMIBaseComponent (1.1.9):
+    - BlocksKit (= 2.2.5)
+    - HTMIBaseComponent/Base (= 1.1.9)
+    - HTMIBaseComponent/Category (= 1.1.9)
+    - HTMIBaseComponent/Encryption (= 1.1.9)
+    - HTMIBaseComponent/ObjcRuntime (= 1.1.9)
+    - HTMIBaseComponent/SettingManager (= 1.1.9)
+    - HTMIBaseComponent/UserDefault (= 1.1.9)
+    - Masonry (~> 1.0.2)
+    - SVProgressHUD (~> 2.1.2)
+  - HTMIBaseComponent/Base (1.1.9):
+    - BlocksKit (= 2.2.5)
+    - Masonry (~> 1.0.2)
+    - SVProgressHUD (~> 2.1.2)
+  - HTMIBaseComponent/Category (1.1.9):
+    - BlocksKit (= 2.2.5)
+    - Masonry (~> 1.0.2)
+    - SVProgressHUD (~> 2.1.2)
+  - HTMIBaseComponent/Encryption (1.1.9):
+    - BlocksKit (= 2.2.5)
+    - Masonry (~> 1.0.2)
+    - SVProgressHUD (~> 2.1.2)
+  - HTMIBaseComponent/ObjcRuntime (1.1.9):
+    - BlocksKit (= 2.2.5)
+    - Masonry (~> 1.0.2)
+    - SVProgressHUD (~> 2.1.2)
+  - HTMIBaseComponent/SettingManager (1.1.9):
+    - BlocksKit (= 2.2.5)
+    - Masonry (~> 1.0.2)
+    - SVProgressHUD (~> 2.1.2)
+  - HTMIBaseComponent/UserDefault (1.1.9):
     - BlocksKit (= 2.2.5)
     - Masonry (~> 1.0.2)
     - SVProgressHUD (~> 2.1.2)
@@ -23,7 +53,6 @@ PODS:
 
 DEPENDENCIES:
   - HTMIBaseComponent (from `../`)
-  - SVProgressHUD (~> 2.1.2)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -37,10 +66,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  HTMIBaseComponent: 75c4e75aa16dd31ba63ff96d6f00dcb0c1163b72
+  HTMIBaseComponent: 940a8a83023215b8670b07194b6cafadbd306bff
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: e09993ce1dcdeb02a0d9323b6c74e2735f78adf4
+PODFILE CHECKSUM: 79ab7da82e62a510b2361989aa4eadf9ed00f519
 
-COCOAPODS: 1.5.0.beta.1
+COCOAPODS: 1.5.0
