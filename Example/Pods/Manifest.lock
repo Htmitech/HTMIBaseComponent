@@ -14,27 +14,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - HTMIBaseComponent (1.2.0):
-    - BlocksKit (= 2.2.5)
-    - HTMIBaseComponent/Base (= 1.2.0)
-    - HTMIBaseComponent/Category (= 1.2.0)
-    - HTMIBaseComponent/Encryption (= 1.2.0)
-    - HTMIBaseComponent/ObjcRuntime (= 1.2.0)
-    - Masonry (~> 1.0.2)
-    - SVProgressHUD (~> 2.1.2)
-  - HTMIBaseComponent/Base (1.2.0):
-    - BlocksKit (= 2.2.5)
-    - Masonry (~> 1.0.2)
-    - SVProgressHUD (~> 2.1.2)
-  - HTMIBaseComponent/Category (1.2.0):
-    - BlocksKit (= 2.2.5)
-    - Masonry (~> 1.0.2)
-    - SVProgressHUD (~> 2.1.2)
-  - HTMIBaseComponent/Encryption (1.2.0):
-    - BlocksKit (= 2.2.5)
-    - Masonry (~> 1.0.2)
-    - SVProgressHUD (~> 2.1.2)
-  - HTMIBaseComponent/ObjcRuntime (1.2.0):
+  - HTMIBaseComponent (1.1.8):
     - BlocksKit (= 2.2.5)
     - Masonry (~> 1.0.2)
     - SVProgressHUD (~> 2.1.2)
@@ -56,7 +36,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  HTMIBaseComponent: 47acb3e3b77e368a318f31ffe810feb9c32fd49d
+  HTMIBaseComponent: 5977c21799c84ee1bbc52530dbc7e0cddf5f653d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 

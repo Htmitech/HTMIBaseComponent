@@ -7,35 +7,8 @@
 //
 
 #import "HTMISettingManager.h"
-
 #import "UIColor+Hex.h"
-//
-//#import "HTMIAppExecutionEngine.h"
-//
-//#import "HTMIPortalModel.h"
-//
-//#import "HTMIAddressBookManager.h"
-//
-//#import "HTMIWorkFlowComponetManager.h"
-//
-//#import "HTMIFilesCenterComponetManager.h"
-//#import "HTMIAppModel.h"
-//
-//#import "SDImageCache.h"
-//
-//#import "HTMIUserdefaultHelper.h"
-//
-//#import "HTMITabBarItem.h"
-//#import "HTMIBadgeImport.h"
-//
-//#import "MXNetworkListView.h"
-//
-//#import "HTMIUserdefineModel.h"
-//#import "HTMIDBManager.h"
-//
-//#import "HTMISetUpMXTool.h"
-//
-//#import "HTMIDBManager+HTMIAppCenter.h"
+
 
 @implementation HTMISettingManager
 

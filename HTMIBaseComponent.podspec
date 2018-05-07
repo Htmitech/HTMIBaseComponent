@@ -30,34 +30,34 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '8.0'
     s.source_files = 'HTMIBaseComponent/Classes/**/*.{h,m}'
     
-    s.subspec 'Base' do |base|
-        base.requires_arc        = true
-        base.public_header_files = [
-        'HTMIBaseComponent/Classes/Base/*.h'
-        ]
-        base.source_files = [
-        'HTMIBaseComponent/Classes/Base/*'
-        ]
-    end
     
-    s.subspec 'Category' do |category|
-        category.requires_arc        = true
-        category.public_header_files = [
-        'HTMIBaseComponent/Classes/Category/*.h',
-        'HTMIBaseComponent/Classes/SettingManager/*.h',
-        'HTMIBaseComponent/Classes/UserDefault/*.h',
-        'HTMIBaseComponent/Classes/Encryption/*.h',
-        'HTMIBaseComponent/Classes/ObjcRuntime/*.h'
-        ]
-        category.source_files = [
-        'HTMIBaseComponent/Classes/Category/*',
-        'HTMIBaseComponent/Classes/SettingManager/*',
-        'HTMIBaseComponent/Classes/UserDefault/*',
-        'HTMIBaseComponent/Classes/Encryption/*',
-        'HTMIBaseComponent/Classes/ObjcRuntime/*'
-        ]
-    end
+    #s.subspec 'Base' do |base|
+    #base.requires_arc        = true
+    #base.public_header_files = [
+    #]
+    # base.source_files = [
+    #  ]
+    # end
     
+    #s.subspec 'Category' do |category|
+    #    category.requires_arc        = true
+    #    category.public_header_files = [
+    #    'HTMIBaseComponent/Classes/Category/*.h',
+    #       'HTMIBaseComponent/Classes/SettingManager/*.h',
+    #        'HTMIBaseComponent/Classes/UserDefault/*.h',
+    #        'HTMIBaseComponent/Classes/Encryption/*.h',
+    #        'HTMIBaseComponent/Classes/ObjcRuntime/*.h',
+    #       'HTMIBaseComponent/Classes/Base/*.h'
+    #        ]
+    #        category.source_files = [
+    #       'HTMIBaseComponent/Classes/Category/*',
+    #        'HTMIBaseComponent/Classes/SettingManager/*',
+    #        'HTMIBaseComponent/Classes/UserDefault/*',
+    #        'HTMIBaseComponent/Classes/Encryption/*',
+    #        'HTMIBaseComponent/Classes/ObjcRuntime/*',
+    #        'HTMIBaseComponent/Classes/Base/*'
+    #        ]
+    #    end
     
     s.dependency 'SVProgressHUD'    , '~> 2.1.2'
     s.dependency 'Masonry', '~> 1.0.2'

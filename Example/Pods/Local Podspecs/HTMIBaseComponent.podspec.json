@@ -1,6 +1,6 @@
 {
   "name": "HTMIBaseComponent",
-  "version": "1.2.0",
+  "version": "1.1.8",
   "summary": "base category component",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Htmitech/HTMIBaseComponent",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Htmitech/HTMIBaseComponent.git",
-    "tag": "1.2.0"
+    "tag": "1.1.8"
   },
   "platforms": {
     "ios": "8.0"
@@ -29,51 +29,5 @@
     "BlocksKit": [
       "2.2.5"
     ]
-  },
-  "subspecs": [
-    {
-      "name": "Base",
-      "requires_arc": true,
-      "public_header_files": [
-        "HTMIBaseComponent/Classes/Base/*.h"
-      ],
-      "source_files": [
-        "HTMIBaseComponent/Classes/Base/*"
-      ]
-    },
-    {
-      "name": "Category",
-      "requires_arc": true,
-      "public_header_files": [
-        "HTMIBaseComponent/Classes/Category/*.h",
-        "HTMIBaseComponent/Classes/SettingManager/*.h",
-        "HTMIBaseComponent/Classes/UserDefault/*.h"
-      ],
-      "source_files": [
-        "HTMIBaseComponent/Classes/Category/*",
-        "HTMIBaseComponent/Classes/SettingManager/*",
-        "HTMIBaseComponent/Classes/UserDefault/*"
-      ]
-    },
-    {
-      "name": "Encryption",
-      "requires_arc": true,
-      "public_header_files": [
-        "HTMIBaseComponent/Classes/Encryption/*.h"
-      ],
-      "source_files": [
-        "HTMIBaseComponent/Classes/Encryption/*"
-      ]
-    },
-    {
-      "name": "ObjcRuntime",
-      "requires_arc": true,
-      "public_header_files": [
-        "HTMIBaseComponent/Classes/ObjcRuntime/*.h"
-      ],
-      "source_files": [
-        "HTMIBaseComponent/Classes/ObjcRuntime/*"
-      ]
-    }
-  ]
+  }
 }
