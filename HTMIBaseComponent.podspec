@@ -45,31 +45,15 @@ Pod::Spec.new do |s|
         category.public_header_files = [
         'HTMIBaseComponent/Classes/Category/*.h',
         'HTMIBaseComponent/Classes/SettingManager/*.h',
-        'HTMIBaseComponent/Classes/UserDefault/*.h'
+        'HTMIBaseComponent/Classes/UserDefault/*.h',
+        'HTMIBaseComponent/Classes/Encryption/*.h',
+        'HTMIBaseComponent/Classes/ObjcRuntime/*.h'
         ]
         category.source_files = [
         'HTMIBaseComponent/Classes/Category/*',
         'HTMIBaseComponent/Classes/SettingManager/*',
-        'HTMIBaseComponent/Classes/UserDefault/*'
-        ]
-    end
-    
-    s.subspec 'Encryption' do |encryption|
-        encryption.requires_arc        = true
-        encryption.public_header_files = [
-        'HTMIBaseComponent/Classes/Encryption/*.h'
-        ]
-        encryption.source_files = [
-        'HTMIBaseComponent/Classes/Encryption/*'
-        ]
-    end
-    
-    s.subspec 'ObjcRuntime' do |objcRuntime|
-        objcRuntime.requires_arc        = true
-        objcRuntime.public_header_files = [
-        'HTMIBaseComponent/Classes/ObjcRuntime/*.h'
-        ]
-        objcRuntime.source_files = [
+        'HTMIBaseComponent/Classes/UserDefault/*',
+        'HTMIBaseComponent/Classes/Encryption/*',
         'HTMIBaseComponent/Classes/ObjcRuntime/*'
         ]
     end
