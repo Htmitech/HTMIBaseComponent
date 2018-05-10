@@ -120,12 +120,12 @@
     
     NSMutableString * imageNameEndString = [NSMutableString stringWithString:imageName];
     
-    if (kApplicationHue == HTMIApplicationHueWhite) {
+    if ([HTMISettingManager manager].applicationHue == HTMIApplicationHueWhite) {
         [imageNameEndString appendString:@"_blue"];
     }
-    else if(kApplicationHue == HTMIApplicationHueRed){
+    else if([HTMISettingManager manager].applicationHue == HTMIApplicationHueRed){
         [imageNameEndString appendString:@"_red"];
-    }else if(kApplicationHue == HTMIApplicationHueBlue){
+    }else if([HTMISettingManager manager].applicationHue == HTMIApplicationHueBlue){
         [imageNameEndString appendString:@"_blue"];
     }
     
@@ -168,7 +168,7 @@
     
     NSMutableString * imageNameEndString = [NSMutableString stringWithString:imageName];
     
-    if (kApplicationHue == HTMIApplicationHueWhite) {
+    if ([HTMISettingManager manager].applicationHue == HTMIApplicationHueWhite) {
         [imageNameEndString appendString:@"_white"];
     }
     else{
@@ -192,11 +192,11 @@
     
     NSMutableString * imageNameEndString = [NSMutableString stringWithString:imageName];
     
-    if (kApplicationHue == HTMIApplicationHueWhite) {
+    if ([HTMISettingManager manager].applicationHue == HTMIApplicationHueWhite) {
         
         [imageNameEndString appendString:@"_white"];
     }
-    else if(kApplicationHue == HTMIApplicationHueBlue){
+    else if([HTMISettingManager manager].applicationHue == HTMIApplicationHueBlue){
         
         [imageNameEndString appendString:@"_blue"];
     }else{

@@ -29,10 +29,10 @@
 - (void)customNavigationController:(BOOL)canReturn title:(NSString *)title
 {
     //设置导航栏背景色
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithRenderColor:navBarColor renderSize:CGSizeMake(10., 10.)] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithRenderColor:[HTMISettingManager manager].navigationBarColor renderSize:CGSizeMake(10., 10.)] forBarMetrics:UIBarMetricsDefault];
     //self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.navigationController.navigationBar.translucent = NO;//的模糊效果，默认为YES
-    self.navigationController.navigationBar.tintColor = navBarColor;
+    self.navigationController.navigationBar.tintColor = [HTMISettingManager manager].navigationBarColor;
     //隐藏底部边线
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     self.navigationController.navigationBarHidden = NO;
@@ -58,7 +58,7 @@
     
     self.navigationItem.title = title;
     [self.navigationController.navigationBar setTitleTextAttributes:
-     HTMINavigationBarTitleFont];
+     [HTMISettingManager manager].applicationNavigationBarTitleFontDic];
 }
 
 

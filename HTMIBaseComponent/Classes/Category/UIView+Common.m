@@ -11,7 +11,7 @@
 #import <objc/runtime.h>
 #import "UIColor+expanded.h"
 #import "Masonry.h"
-//#import "UIBadgeView.h"
+#import "UIFont+HTMIFont.h"
 #import "HTMISettingManager.h"
 
 #ifndef kColorDDD
@@ -595,7 +595,7 @@ static char LoadingViewKey, BlankPageViewKey;
     //            _reloadButton = [[UIButton alloc] initWithFrame:CGRectZero];
     //            //[_reloadButton setImage:[UIImage imageNamed:@"blankpage_button_reload"] forState:UIControlStateNormal];
     //            //_reloadButton.adjustsImageWhenHighlighted = YES;
-    //            [_reloadButton setBackgroundImage:[UIImage imageWithRenderColor:kHTMI_HUEControlColor renderSize:CGSizeMake(10., 10.)] forState:UIControlStateNormal];
+    //            [_reloadButton setBackgroundImage:[UIImage imageWithRenderColor:[HTMISettingManager manager].controlColor renderSize:CGSizeMake(10., 10.)] forState:UIControlStateNormal];
     //
     //            [_reloadButton setTitle:@"刷新" forState:UIControlStateNormal];
     //

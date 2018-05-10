@@ -1,5 +1,5 @@
 //
-//  Userdefault.m
+//  [NSUserDefaults standardUserDefaults].m
 //  Express
 //
 //  Created by admin on 15/6/16.
@@ -7,12 +7,8 @@
 //
 
 #import "HTMIUserdefaultHelper.h"
-
 #import "HTMISettingManager.h"
 
-#define USERDEFAULT [NSUserDefaults standardUserDefaults]
-#define HTMI_FONT_COEFFICIENT_New @"HTMIFontSizeCoefficient"
-#define HTMI_FONT_COEFFICIENT_Old @"HTMIOldFontSizeCoefficient"
 
 @implementation HTMIUserdefaultHelper
 
@@ -47,7 +43,7 @@ NSString * const First_Start = @"firstStartMXApp";
 
 + (BOOL)hasSetNewFontSizeCoefficient{
     
-    NSString * hasSet = [USERDEFAULT objectForKey:@"HasSetFontSize"];
+    NSString * hasSet = [[NSUserDefaults standardUserDefaults] objectForKey:@"HasSetFontSize"];
     
     if (hasSet && hasSet.length > 0) {
         return YES;
@@ -75,30 +71,30 @@ NSString * const First_Start = @"firstStartMXApp";
 
 +(void)defaultSaveNewFontSizeCoefficient:(NSInteger )coefficient{
     
-    [USERDEFAULT setObject:@"HasSetFontSize" forKey:@"HasSetFontSize"];
+    [[NSUserDefaults standardUserDefaults] setObject:@"HasSetFontSize" forKey:@"HasSetFontSize"];
     
-    [USERDEFAULT setInteger:coefficient forKey:HTMI_FONT_COEFFICIENT_New];
-    [USERDEFAULT synchronize];
+    [[NSUserDefaults standardUserDefaults] setInteger:coefficient forKey:@"HTMIFontSizeCoefficient"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 +(void)defaultSaveContext:(NSDictionary *)context{
     //    HTMILogInfo(@"Context:%@",context);
-    [USERDEFAULT setObject:context forKey:@"kContextDictionary"];
-    [USERDEFAULT synchronize];
+    [[NSUserDefaults standardUserDefaults] setObject:context forKey:@"kContextDictionary"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 //+(void)defaultSavePortalMessage:(NSDictionary *)portalMessage{
 ////    HTMILogInfo(@"PortalMessage:%@",portalMessage);
-//    [USERDEFAULT setObject:portalMessage forKey:@"kPortalMessage"];
-//    [USERDEFAULT synchronize];
+//    [[NSUserDefaults standardUserDefaults] setObject:portalMessage forKey:@"kPortalMessage"];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
 //}
 //+(NSDictionary *)defaultLoadPortalMessage{
 //
-//    return [USERDEFAULT objectForKey:@"kPortalMessage"] ==  nil ? @{}:[USERDEFAULT objectForKey:@"kPortalMessage"];
+//    return [[NSUserDefaults standardUserDefaults] objectForKey:@"kPortalMessage"] ==  nil ? @{}:[[NSUserDefaults standardUserDefaults] objectForKey:@"kPortalMessage"];
 //}
 
 +(NSDictionary *)defaultLoadContext{
     
-    return [USERDEFAULT objectForKey:@"kContextDictionary"] ==  nil ? @{}:[USERDEFAULT objectForKey:@"kContextDictionary"];
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"kContextDictionary"] ==  nil ? @{}:[[NSUserDefaults standardUserDefaults] objectForKey:@"kContextDictionary"];
 }
 
 +(NSInteger)defaultLoadNewFontSizeCoefficient{
@@ -237,43 +233,43 @@ NSString * const First_Start = @"firstStartMXApp";
 +(NSString *)defaultLoadRefreshToken;
 {
     //    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults] ;
-    return [USERDEFAULT objectForKey:@"widget_htmiRefreshToken"] ==  nil ? @"": [USERDEFAULT objectForKey:@"widget_htmiRefreshToken"];
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"widget_htmiRefreshToken"] ==  nil ? @"": [[NSUserDefaults standardUserDefaults] objectForKey:@"widget_htmiRefreshToken"];
 }
 
 +(void)defaultSaveRefreshToken:(NSString *)a;
 {
     //    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-    [USERDEFAULT setObject:a  forKey:@"widget_htmiRefreshToken"];
-    [USERDEFAULT synchronize];
+    [[NSUserDefaults standardUserDefaults] setObject:a  forKey:@"widget_htmiRefreshToken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
     [self htmi_defaultSaveRefreshToken:
      [NSString stringWithFormat:@"%@",a]];
 }
 
 +(void)htmi_defaultSaveRefreshToken:(NSString *)a {
-    [USERDEFAULT setObject:a  forKey:@"htmiRefreshToken"];
-    [USERDEFAULT synchronize];
+    [[NSUserDefaults standardUserDefaults] setObject:a  forKey:@"htmiRefreshToken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 //accessToken
 +(NSString*)defaultLoadAccessToken;
 {
     //    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults] ;
-    return [USERDEFAULT objectForKey:@"widget_htmiAccessToken"] ==  nil ? @"": [USERDEFAULT objectForKey:@"widget_htmiAccessToken"];
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"widget_htmiAccessToken"] ==  nil ? @"": [[NSUserDefaults standardUserDefaults] objectForKey:@"widget_htmiAccessToken"];
 }
 
 +(void)defaultSaveAccessToken:(NSString *)a;
 {
     //    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-    [USERDEFAULT setObject:a  forKey:@"widget_htmiAccessToken"];
-    [USERDEFAULT synchronize];
+    [[NSUserDefaults standardUserDefaults] setObject:a  forKey:@"widget_htmiAccessToken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
     [self htmi_defaultSaveAccessToken:[NSString stringWithFormat:@"%@",a]];
 }
 
 +(void)htmi_defaultSaveAccessToken:(NSString *)a {
-    [USERDEFAULT setObject:a  forKey:@"htmiAccessToken"];
-    [USERDEFAULT synchronize];
+    [[NSUserDefaults standardUserDefaults] setObject:a  forKey:@"htmiAccessToken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 //PortalID
 +(NSString*)defaultLoadPortalID
@@ -408,12 +404,12 @@ NSString * const First_Start = @"firstStartMXApp";
 //
 +(void)defaultSaveFontEditePageCoefficient:(NSInteger )coefficient{
     
-    [USERDEFAULT setInteger:coefficient forKey:@"FontEditePageCoefficient"];
-    [USERDEFAULT synchronize];
+    [[NSUserDefaults standardUserDefaults] setInteger:coefficient forKey:@"FontEditePageCoefficient"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 //
 +(NSInteger)defaultLoadFontEditePageCoefficient{
-    return  [USERDEFAULT integerForKey:@"FontEditePageCoefficient"];
+    return  [[NSUserDefaults standardUserDefaults] integerForKey:@"FontEditePageCoefficient"];
 }
 
 +(void)clearCache{
@@ -443,27 +439,27 @@ NSString * const First_Start = @"firstStartMXApp";
 //临时账号
 + (NSString *)defaultLoadTempLoginName{
     
-    return [USERDEFAULT objectForKey:@"HTMITempLoginName"];
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"HTMITempLoginName"];
 }
 
 //临时账号
 + (void)defaultSaveTempLoginName:(NSString *)a {
-    [USERDEFAULT setObject:a forKey:@"HTMITempLoginName"];
-    [USERDEFAULT synchronize];
+    [[NSUserDefaults standardUserDefaults] setObject:a forKey:@"HTMITempLoginName"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 //账号
 + (NSString *)defaultLoadLoginName{
     
-    return [USERDEFAULT objectForKey:@"HTMILoginName"];
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"HTMILoginName"];
 }
 + (void)defaultSaveLoginName:(NSString *)a{
-    [USERDEFAULT setObject:a forKey:@"HTMILoginName"];
-    [USERDEFAULT synchronize];
+    [[NSUserDefaults standardUserDefaults] setObject:a forKey:@"HTMILoginName"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 + (void)removeHTMIUserDefaultValueForloginName{
     
-    [USERDEFAULT removeObjectForKey:@"HTMILoginName"];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"HTMILoginName"];
 }
 
 

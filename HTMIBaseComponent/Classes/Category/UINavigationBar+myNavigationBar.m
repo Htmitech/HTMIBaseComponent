@@ -31,7 +31,7 @@ void bd_exchageClassMethod_setTitleTextAttributes(Class aClass, SEL oldSEL, SEL 
 
 - (void)hook_setTitleTextAttributes:(NSDictionary *)titleTextAttributes
 {
-    [self hook_setTitleTextAttributes:HTMINavigationBarTitleFont];
+    [self hook_setTitleTextAttributes:[HTMISettingManager manager].applicationNavigationBarTitleFontDic];
 }
 
 - (void)hideBottomHairline {

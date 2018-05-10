@@ -68,18 +68,6 @@
  */
 +(NSDictionary *)defaultLoadContext;
 
-///**
-// 保存portalMessage字典对象
-//
-// */
-//+(void)defaultSavePortalMessage:(NSDictionary *)portalMessage;
-
-///**
-// 读取 portalMessage
-//
-// */
-//+(NSDictionary *)defaultLoadPortalMessage;
-
 
 +(NSInteger)defaultLoadNewFontSizeCoefficient;
 
@@ -191,7 +179,6 @@
  正文
  */
 +(NSString *)defaultLoadBodyFile;
-
 +(void)defaultSaveBodyFile:(NSString *)a;
 
 @end
