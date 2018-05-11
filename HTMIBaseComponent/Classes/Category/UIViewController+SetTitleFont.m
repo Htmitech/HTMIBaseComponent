@@ -7,16 +7,13 @@
 //
 
 #import "UIViewController+SetTitleFont.h"
-//#import "MXNetworkListView.h"
 #import "HTMISettingManager.h"
-#import "BlocksKit+UIKit.h"
 #import "SVProgressHUD.h"
 #import "UIImage+WM.h"
 
 @implementation UIViewController (SetTitleFont)
 
-- (void)myClickReturn
-{
+- (void)myClickReturn {
     [self myPopViewControllerrAnimated:YES];
 }
 
@@ -26,8 +23,7 @@
     [self.navigationController popViewControllerAnimated:animated];
 }
 
-- (void)customNavigationController:(BOOL)canReturn title:(NSString *)title
-{
+- (void)customNavigationController:(BOOL)canReturn title:(NSString *)title {
     //设置导航栏背景色
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithRenderColor:[HTMISettingManager manager].navigationBarColor renderSize:CGSizeMake(10., 10.)] forBarMetrics:UIBarMetricsDefault];
     //self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
@@ -45,12 +41,7 @@
     }
     else {
         UIButton *btnLeft = [self htmi_leftButton:@"mx_btn_community_list_phone"];
-        
-        [btnLeft bk_addEventHandler:^(id sender) {
-            
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"htmi_leftBarButtonItemClick" object:self];
-            
-        } forControlEvents:UIControlEventTouchUpInside];
+        [btnLeft addTarget:self action:@selector(p_btnLeftClicked:) forControlEvents:UIControlEventTouchUpInside];
         
         //页面加载完成之后 获取是否有新版本
         //[[MXNetworkListView sharedMXNetworkListView] isHaveVersionRedDot];
@@ -61,7 +52,9 @@
      [HTMISettingManager manager].applicationNavigationBarTitleFontDic];
 }
 
-
+- (void)p_btnLeftClicked:(UIButton *)sender {
+       [[NSNotificationCenter defaultCenter] postNotificationName:@"htmi_leftBarButtonItemClick" object:self];
+}
 
 #pragma mark - Private
 

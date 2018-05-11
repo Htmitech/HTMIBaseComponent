@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'HTMIBaseComponent'
-    s.version          = '1.1.9'
+    s.version          = '1.2.0'
     s.summary          = 'base category component'
     
     # This description is used to generate tags and improve search results.
@@ -61,6 +61,7 @@ Pod::Spec.new do |s|
     
     s.dependency 'SVProgressHUD'    , '~> 2.1.2'
     s.dependency 'Masonry', '~> 1.0.2'
-    s.dependency 'BlocksKit', '2.2.5'
+    s.dependency 'HTMISettingManager', '~> 0.1.0'
+    #s.dependency 'BlocksKit', '2.2.5'
     
 end
