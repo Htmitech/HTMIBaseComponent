@@ -59,13 +59,13 @@
     self.view.backgroundColor = kDefaultBackgroundColor;
     
     self.viewModel.naviImpl = [[HTMIViewModelNavigationImpl alloc]
-                                initWithNavigationController:self.navigationController];
+                               initWithNavigationController:self.navigationController];
     if (self.navigationController && self != self.navigationController.viewControllers.firstObject)
     {
         /*
-        UIPanGestureRecognizer *popRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePopRecognizer:)];
-        [self.view addGestureRecognizer:popRecognizer];
-        popRecognizer.delegate = self;
+         UIPanGestureRecognizer *popRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePopRecognizer:)];
+         [self.view addGestureRecognizer:popRecognizer];
+         popRecognizer.delegate = self;
          */
     }
 }
@@ -80,10 +80,10 @@
     //        }
     //    }
     
-    //禁止页面返回手势
-    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-    }
+    //    //禁止页面返回手势
+    //    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+    //        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    //    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

@@ -10,4 +10,11 @@
 
 @interface HTMINavigationController : UINavigationController
 
+/**
+ 获取侧滑返回手势
+ 
+ @return 屏幕侧滑手势
+ */
+- (UIScreenEdgePanGestureRecognizer *)screenEdgePanGestureRecognizer;
+
 @end
