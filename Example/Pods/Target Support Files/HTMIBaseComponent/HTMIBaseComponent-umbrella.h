@@ -36,6 +36,7 @@
 #import "NSString+BundlePath.h"
 #import "NSString+Extention.h"
 #import "NSString+Hash.h"
+#import "NSString+HTMIDocumentPath.h"
 #import "NSString+HTMISize.h"
 #import "NSString+HTMITime.h"
 #import "SVProgressHUD+Swizzling.h"
@@ -91,6 +92,7 @@
 #import "HTMIGTMBase64.h"
 #import "HTMIGTMDefines.h"
 #import "ObjcRuntime.h"
+#import "HTMIPluginBaseObject.h"
 
 FOUNDATION_EXPORT double HTMIBaseComponentVersionNumber;
 FOUNDATION_EXPORT const unsigned char HTMIBaseComponentVersionString[];

@@ -1,6 +1,6 @@
 {
   "name": "HTMIBaseComponent",
-  "version": "1.1.9",
+  "version": "1.2.2",
   "summary": "base category component",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Htmitech/HTMIBaseComponent",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Htmitech/HTMIBaseComponent.git",
-    "tag": "1.1.9"
+    "tag": "1.2.2"
   },
   "platforms": {
     "ios": "8.0"

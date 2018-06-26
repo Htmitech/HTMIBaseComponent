@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AEAC58DB89469A289F7BBEE2C636A9AE"
+               BlueprintIdentifier = "2DF3ECC7097A25F1DDC7490195205FCF"
                BlueprintName = "HTMIBaseComponent"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "HTMIBaseComponent.framework">

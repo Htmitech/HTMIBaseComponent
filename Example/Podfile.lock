@@ -1,5 +1,5 @@
 PODS:
-  - HTMIBaseComponent (1.1.9):
+  - HTMIBaseComponent (1.2.2):
     - HTMISettingManager (~> 0.1.0)
     - Masonry (~> 1.0.2)
     - SVProgressHUD (~> 2.1.2)
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HTMIBaseComponent: 75137ab9eb528d8aec646c57a9a5fc38431d8555
+  HTMIBaseComponent: e655c833c31e5d75238ca8b18d83fc5133027003
   HTMISettingManager: 7f251aeea92cff05bc59f05b987fd95b04de5f81
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
