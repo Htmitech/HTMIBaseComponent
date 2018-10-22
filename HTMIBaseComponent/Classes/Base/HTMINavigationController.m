@@ -107,7 +107,7 @@ UIGestureRecognizerDelegate>
 
 // 是否支持旋转
 - (BOOL)shouldAutorotate {
-    return self.viewControllers.lastObject.shouldAutorotate ? YES : NO;
+    return self.viewControllers.lastObject.shouldAutorotate ? NO : NO;
 }
 
 // 支持的方向

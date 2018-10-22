@@ -40,7 +40,7 @@
 
 // 是否支持旋转
 - (BOOL)shouldAutorotate {
-    return YES;
+    return NO;
 }
 
 // 支持的方向
