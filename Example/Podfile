@@ -1,3 +1,5 @@
+source 'https://git.coding.net/MyCoding521/HTMISpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'HTMIBaseComponent_Example' do
